@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Activity, Users, Network, Cpu, ShoppingCart, Calendar, Play, ShieldCheck } from 'lucide-react';
+import { Shield, Activity, Users, Network, Cpu, ShoppingCart, Calendar, Play, ShieldCheck, LogOut, UserCheck } from 'lucide-react';
 
-export default function Navbar({ onOpenSim }) {
+export default function Navbar({ onOpenSim, currentUser, onLogout }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -17,10 +17,10 @@ export default function Navbar({ onOpenSim }) {
     { label: 'المحاكاة ثلاثية الأبعاد', href: '#simulation', icon: Activity },
     { label: 'فريق العمل والمهام', href: '#team', icon: Users },
     { label: 'خريطة ربط المنظومة', href: '#integration', icon: Network },
-    { label: 'فريق الشبكات (4)', href: '#network-flow', icon: Cpu },
+    { label: 'خطوط سير الأقسام (Pipelines)', href: '#pipelines', icon: Cpu },
     { label: 'دليل شراء الهاردوير', href: '#hardware', icon: ShoppingCart },
     { label: 'الخطة الزمنية', href: '#timeline', icon: Calendar },
-    { label: 'قواعد وميثاق التيم', href: '#rules', icon: ShieldCheck },
+    { label: 'ميثاق التيم', href: '#rules', icon: ShieldCheck },
   ];
 
   return (
@@ -62,14 +62,31 @@ export default function Navbar({ onOpenSim }) {
           })}
         </div>
 
-        {/* Right CTA */}
-        <div className="flex items-center gap-3">
+        {/* Right CTA + User Profile + Logout */}
+        <div className="flex items-center gap-2.5">
+          {currentUser && (
+            <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 border border-cyan-500/30 text-xs">
+              <span className="text-base">{currentUser.avatar}</span>
+              <div className="text-right">
+                <span className="font-bold text-white block text-[11px]">{currentUser.name}</span>
+                <span className="text-[9px] text-cyan-400 block font-mono">@{currentUser.username}</span>
+              </div>
+              <button
+                onClick={onLogout}
+                title="تسجيل الخروج"
+                className="mr-1 text-gray-400 hover:text-red-400 p-1 rounded-lg hover:bg-red-500/10 transition-colors"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          )}
+
           <button
             onClick={onOpenSim}
-            className="flex items-center gap-2 px-4 py-2 text-xs font-bold text-black bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all"
+            className="flex items-center gap-2 px-3.5 py-2 text-xs font-bold text-black bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all"
           >
             <Play className="w-3.5 h-3.5 fill-black" />
-            <span>تشغيل المحاكاة</span>
+            <span className="hidden sm:inline">تشغيل المحاكاة</span>
           </button>
 
           {/* Mobile menu button */}
@@ -91,6 +108,25 @@ export default function Navbar({ onOpenSim }) {
       {/* Mobile dropdown */}
       {mobileMenu && (
         <div className="xl:hidden bg-[#080c14]/98 border-b border-cyan-500/20 px-4 pt-3 pb-6 mt-3 space-y-2">
+          {currentUser && (
+            <div className="p-3 mb-2 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">{currentUser.avatar}</span>
+                <div>
+                  <span className="font-bold text-white text-xs block">{currentUser.name}</span>
+                  <span className="text-[10px] text-cyan-400 font-mono">@{currentUser.username}</span>
+                </div>
+              </div>
+              <button
+                onClick={onLogout}
+                className="px-2.5 py-1 rounded-lg bg-red-500/20 text-red-400 text-xs font-bold flex items-center gap-1"
+              >
+                <LogOut className="w-3 h-3" />
+                <span>خروج</span>
+              </button>
+            </div>
+          )}
+
           {navLinks.map((item) => {
             const Icon = item.icon;
             return (

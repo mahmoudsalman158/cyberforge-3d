@@ -10,116 +10,116 @@ export const systemLayers = [
   },
   {
     id: 'switch-layer',
-    title: '2. طبقة السويتش والبنية التحتية',
-    engineer: 'رقيه وسام محمد علي',
-    color: '#38bdf8',
+    title: '2. طبقة السويتش والبنية التحتية الفيزيائية',
+    engineer: 'محمد أشرف محمد إمبابي',
+    color: '#06b6d4',
     icon: 'Network',
-    description: 'سويتش Cisco 2960 مقسم لـ 5 شبكات VLANs معزولة مع حماية المنافذ وبورت نسخ الترافيك SPAN.',
-    outputs: ['عزل الأجهزة في شبكات فرعية', 'بورت SPAN ينسخ حركة البيانات', 'خط Trunk موصل للفايروول']
+    description: 'سويتش Cisco 2960 مقسم لـ 5 شبكات VLANs معزولة مع حماية المنافذ Port Security وبورت نسخ الترافيك SPAN.',
+    outputs: ['عزل الأجهزة في 5 شبكات فرعية', 'بورت SPAN ينسخ حركة البيانات', 'خط 802.1Q Trunk موصل للفايروول']
   },
   {
     id: 'protocols-layer',
-    title: '3. طبقة بروتوكولات المصنع والمحاكاة',
+    title: '3. طبقة بروتوكولات المصنع والنفق المشفر',
     engineer: 'محمود أشرف السيد عبداللطيف',
-    color: '#818cf8',
+    color: '#3b82f6',
     icon: 'Layers',
-    description: 'سيرفر Mosquitto MQTT Broker منظم + محاكي Modbus TCP + سيناريو موسع لمصنع افتراضي على EVE-NG.',
-    outputs: ['قنوات اتصال Topics سريعة ومنظمة', 'محاكاة لشبكة مصنع ضخم قابل للتوسع', 'توجيه منخفض التأخير للبيانات']
+    description: 'سيرفر Mosquitto MQTT Broker منظم + بروتوكول Modbus TCP + نفق WireGuard VPN المشفر لسحابة AWS + محاكاة EVE-NG.',
+    outputs: ['قنوات اتصال Topics سريعة ومؤمنة', 'نفق WireGuard فائق السرعة لـ AWS', 'توجيه منخفض التأخير ومحاكاة لمصنع ضخم']
   },
   {
     id: 'firewall-layer',
-    title: '4. طبقة الجدار الناري والتفتيش',
+    title: '4. طبقة الجدار الناري والتفتيش والعزل',
     engineer: 'شهد أحمد جوده محمد',
     color: '#f43f5e',
     icon: 'ShieldAlert',
     description: 'جهاز pfSense Firewall يطبق قواعد المرور الصارمة (ACLs) ويفحص الحزم بـ Suricata IDS/IPS ويعزل الأجهزة في VLAN 50.',
-    outputs: ['منع وصول الترافيك غير المصرح', 'رصد الهجمات بـ Suricata', 'عزل تلقائي للمهاجم في Quarantine']
-  },
-  {
-    id: 'vpn-layer',
-    title: '5. طبقة النفق المشفر والمراقبة',
-    engineer: 'محمد أشرف محمد إمبابي',
-    color: '#06b6d4',
-    icon: 'Radio',
-    description: 'نفق مشفر WireGuard VPN يربط المعمل بالسحابة + التقاط PCAPs مستمر + تمرير السجلات عبر Syslog.',
-    outputs: ['نفق مشفر آمن وسريع لـ AWS', 'سحب ملفات PCAP لتدريب الـ AI', 'توجيه سجلات الشبكة لمنصة Wazuh']
+    outputs: ['منع وصول الترافيك غير المصرح به', 'رصد الهجمات بـ Suricata DPI', 'عزل تلقائي للمهاجم في Quarantine']
   },
   {
     id: 'cloud-layer',
-    title: '6. طبقة السحابة والمصائد المخادعة',
+    title: '5. طبقة السحابة والمصائد المخادعة',
     engineer: 'عمار ياسر السيد عبدالله',
-    color: '#a855f7',
+    color: '#f59e0b',
     icon: 'Cloud',
-    description: 'بنية AWS VPC مؤمنة + مصفوفة مصائد العسل (Cowrie + Dionaea + Conpot SCADA) + استخراج Threat Intel.',
-    outputs: ['استدراج المهاجمين وتسجيل أوامرهم', 'توليد ملفات Threat Intel', 'استضافة سيرفرات Wazuh والـ Backend']
+    description: 'بنية AWS VPC مؤمنة + مصفوفة مصائد العسل (Cowrie SSH + Conpot SCADA) + ملفات مفخخة + استخراج Threat Intel.',
+    outputs: ['استدراج المهاجمين وتسجيل أوامرهم', 'توليد ملفات Threat Intelligence', 'استضافة سيرفرات Wazuh والـ Backend']
   },
   {
     id: 'soc-layer',
-    title: '7. طبقة مركز العمليات الأمنية (SOC)',
+    title: '6. طبقة مركز العمليات الأمنية (SOC)',
     engineer: 'شامل محمد علي شاهين',
-    color: '#3b82f6',
-    icon: 'Eye',
-    description: 'منصة Wazuh SIEM تجمع كل السجلات في شاشة واحدة + قواعد رصد مخصصة + كتيبات الاستجابة للحوادث.',
-    outputs: ['تنبيهات فورية عند أي هجوم', 'داشبورد أمني شامل لايف', 'تقارير أمنية احترافية للحوادث']
+    color: '#8b5cf6',
+    icon: 'Radio',
+    description: 'منصة Wazuh SIEM تجمع سجلات المنظومة + قواعد رصد مخصصة XML + تنبيهات لحظية + كتيبات الاستجابة للحوادث.',
+    outputs: ['لوحة تحكم أمنية تفاعلية لايف', 'إنذارات مصنفة حسب مستويات الخطورة', 'تحليل شامل للأدلة الجنائية']
   },
   {
-    id: 'ai-software-layer',
-    title: '8. طبقة الذكاء الاصطناعي وتطبيقات المراقبة',
+    id: 'pentest-layer',
+    title: '7. طبقة اختبار الاختراق وفحص الثغرات',
+    engineer: 'رقيه وسام محمد علي',
+    color: '#ec4899',
+    icon: 'Layers',
+    description: 'فحص واختبار أمان تطبيقات الويب والـ APIs (Burp Suite و OWASP Top 10) وفحص شبكات الوايفاي وإعداد تقرير الـ Pentest الرسمي.',
+    outputs: ['كشف واستغلال ثغرات الويب والـ APIs', 'فحص أمان وايفاي الـ Rover والشبكة', 'تقرير اختبار الاختراق الميداني الرسمي']
+  },
+  {
+    id: 'ai-layer',
+    title: '8. طبقة الذكاء الاصطناعي وتطوير المنظومة',
     engineer: 'محمود محمد أحمد عبد ربه سليمان',
     color: '#00d4ff',
     icon: 'Brain',
-    description: 'نماذج ML لكشف الشذوذ (Anomaly Detection) + خادم APIs بـ FastAPI + لوحة تحكم الويب وتطبيق الموبايل + هجمات الريد تيم.',
-    outputs: ['تقييم نسبة الخطر Anomaly Score', 'أوامر عزل تلقائية فورية', 'لوحة تحكم وتطبيق موبايل تفاعلي لايف']
+    description: 'محرك كشف الشذوذ (Isolation Forest & Autoencoder) + موديول تقييم المخاطر والـ GRC الذكي + خادم FastAPI + تطبيق الموبايل + هجمات الريد تيم المتقدمة.',
+    outputs: ['كشف الشذوذ وتوليد Anomaly Score', 'مصفوفة المخاطر والامتثال الذكية (AI-GRC)', 'إصدار أمر العزل اللحظي للفايروول والريلاي']
   }
 ];
 
 export const integrationFlows = [
   {
-    from: 'مروان أشرف (ESP32 & Rover)',
-    to: 'رقيه وسام (Cisco Switch)',
-    label: 'Physical Access Ports',
-    desc: 'توصيل البوردات والحساسات في بورتات الـ Access المخصصة لكل VLAN'
-  },
-  {
-    from: 'رقيه وسام (Cisco Switch)',
-    to: 'شهد أحمد (pfSense Firewall)',
-    label: '802.1Q Trunk Port',
-    desc: 'تمرير ترافيك الـ 5 شبكات للفايروول لتطبيق قواعد العزل'
-  },
-  {
-    from: 'رقيه وسام (SPAN Port)',
-    to: 'محمد إمبابي (Traffic Collector)',
-    label: 'Mirror Traffic',
-    desc: 'نسخ جميع باكتس الشبكة للتحليل واستخراج ملفات الـ PCAP'
-  },
-  {
-    from: 'مروان أشرف (Sensors)',
+    from: 'مروان أشرف (ESP32)',
     to: 'محمود أشرف (MQTT Broker)',
-    label: 'Sensor Telemetry',
-    desc: 'إرسال قراءات المحطات الأربعة كل ثانية عبر Topics منظمة'
+    label: 'MQTT (Port 1883)',
+    desc: 'نشر قراءات الحساسات (حرارة، تيار، غاز) في مواضيع topics محددة بصيغة JSON خفيفة.'
   },
   {
-    from: 'شهد أحمد (pfSense) + إمبابي',
+    from: 'محمد إمبابي (Switch)',
+    to: 'شهد أحمد (pfSense)',
+    label: '802.1Q Trunk',
+    desc: 'تمرير ترافيك الـ 5 VLANs بكابل شبكة واحد عالي السرعة ليتم تطبيق التوجيه وقواعد الـ ACLs.'
+  },
+  {
+    from: 'محمد إمبابي (Switch SPAN)',
+    to: 'شامل وشهد ورقية',
+    label: 'Port Mirroring',
+    desc: 'نسخ كل ترافيك محطات المصنع والمصائد وبثه لأجهزة التحليل والسوك واختبار الاختراق.'
+  },
+  {
+    from: 'محمود أشرف (معمل الشبكات)',
     to: 'عمار ياسر (AWS Cloud)',
-    label: 'WireGuard Tunnel',
-    desc: 'ربط الشبكة المحلية بالمعمل مع سيرفرات السحابة بنفق مشفر'
+    label: 'WireGuard (UDP 51820)',
+    desc: 'نفق VPN مشفر يربط المعمل بالسحابة لنقل بيانات الـ Telemetry وسجلات المصائد بأمان.'
   },
   {
-    from: 'عمار ياسر (Honeypots) + إمبابي (Syslog)',
+    from: 'شهد (pfSense) وإمبابي (Switch)',
     to: 'شامل شاهين (Wazuh SIEM)',
-    label: 'Log Aggregation',
-    desc: 'تغذية السجلات من المصائد والفايروول والسويتش في مكان واحد'
+    label: 'Syslog (UDP 514)',
+    desc: 'توجيه سجلات المرور وتنبيهات Suricata IDS وسجلات السويتش لمنصة الـ SIEM المركزية.'
   },
   {
-    from: 'محمود أشرف (MQTT) + إمبابي (PCAPs)',
-    to: 'محمود سلمان (AI Engine & API)',
-    label: 'Data Feed for AI',
-    desc: 'تغذية نموذج الذكاء الاصطناعي بالبيانات لكشف الأنماط الشاذة'
+    from: 'عمار ياسر (Honeypots)',
+    to: 'شامل شاهين (Wazuh SIEM)',
+    label: 'JSON Log Shipper',
+    desc: 'تمرير جلسات المهاجمين المستدرجين في مصائد Cowrie و Conpot لتحليل تقنياتهم.'
   },
   {
-    from: 'محمود سلمان (AI Detection)',
-    to: 'شهد أحمد (pfSense API) + مروان (Relay)',
-    label: 'Automated Response',
-    desc: 'عزل المهاجم في VLAN 50 فوراً وفصل كهرباء المحطة فيزيائياً'
+    from: 'رقية وسام (Pentest & Recon)',
+    to: 'محمود سلمان (AI & Dev)',
+    label: 'Burp Suite / API Audit',
+    desc: 'تسليم تقرير الثغرات المكتشفة في لوحة التحكم والـ APIs لسدها ودمجها مع تقرير هجمات الريد تيم.'
+  },
+  {
+    from: 'محمود سلمان (AI Engine)',
+    to: 'شهد (pfSense) ومروان (Relay)',
+    label: 'REST API & MQTT Action',
+    desc: 'إصدار أمر فوري لـ pfSense لنقل المهاجم لـ VLAN 50، وأمر لمفتاح الـ Relay لفصل الطاقة في 20ms.'
   }
 ];

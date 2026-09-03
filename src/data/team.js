@@ -2,34 +2,37 @@ export const teamMembers = [
   {
     id: 'mahmoud-salman',
     name: 'محمود محمد أحمد عبد ربه سليمان',
-    role: 'Red Team Operator, Full-Stack Software & AI Core Architect',
-    category: 'Software & AI',
+    role: 'Red Team Operator, Full-Stack Developer & AI Core Architect',
+    category: 'Red Team & Software',
     color: '#00d4ff',
     badge: 'Red Team / AI / Full-Stack',
     avatar: '👨‍💻',
-    summary: 'مسؤول عن قيادة سيناريوهات هجمات الريد تيم، تطوير لوحة تحكم الويب وتطبيق الموبايل، وبناء نماذج الذكاء الاصطناعي لكشف الشذوذ، وهندسة خوادم الـ APIs والـ WebSockets.',
-    detailedMission: 'بناء العقل الذكي للمنظومة الذي يربط العالم الفيزيائي (الحساسات والمحركات) بالبنية الشبكية والسحابية، وتطوير واجهات المراقبة والتحكم اللحظية للمسؤولين، مع تصميم وتنفيذ هجمات سيبرانية متقدمة على المنظومة لإثبات كفاءة آليات الكشف والاستجابة التلقائية.',
-    whyThisRoleMatters: 'بدون محرك الذكاء الاصطناعي، ستعتمد المنظومة فقط على القواعد الثابتة (Rule-based) التي تفشل أمام هجمات التلاعب التدريجي والتزوير الدقيق للبيانات. وبدون الواجهات البرمجية وتطبيق الموبايل ولوحة التحكم، لن يتمكن مهندسو الأمن من رؤية الأحداث لايف أو التحكم في الـ Rover واستلام الإنذارات في ثوانٍ.',
-    howItIsImplemented: '1. تدريب نماذج Machine Learning (Isolation Forest & Autoencoder) باستخدام Scikit-learn و PyTorch على مجموعات بيانات حركة المرور الصناعية وقراءات الحساسات لتحديد الأنماط الشاذة وتوليد Anomaly Score فوري.\n2. برمجة خادم Backend بـ FastAPI يدعم بروتوكول WebSockets لضمان التحديث اللحظي لبيانات الحساسات وتنبيهات الأمان بدون أي تأخير.\n3. تطوير لوحة تحكم ويب تفاعلية بـ React وتطبيق موبايل بـ Flutter يحتوي على خريطة المصنع، حالة الأجهزة، وواجهة تحكم يدوي في حركة الـ Rover في حالات الطوارئ.\n4. إعداد سكربتات هجومية متقدمة في بيئة Kali Linux باستخدام Python و Scapy و Nmap لمحاكاة هجمات Stuxnet و MQTT Injection و Brute-Force وتنفيذها مباشرة أمام لجنة التحكيم.',
+    summary: 'مسؤول عن قيادة هجمات الريد تيم الصناعية المتقدمة، محرك الذكاء الاصطناعي لكشف الشذوذ، موديول تقييم المخاطر والامتثال الذكي (AI-Driven GRC)، وخادم الـ APIs وتطبيق الموبايل.',
+    detailedMission: 'بناء العقل الذكي للمنظومة الذي يربط العالم الفيزيائي (الحساسات والمحركات) بالبنية الشبكية والسحابية، وتطوير واجهات المراقبة والتحكم اللحظية للمسؤولين، مع تصميم وتنفيذ هجمات سيبرانية متقدمة على المنظومة لإثبات كفاءة آليات الكشف والاستجابة التلقائية، وأتمتة مصفوفة المخاطر والامتثال لمعايير المصانع الدولية (IEC 62443) بالذكاء الاصطناعي.',
+    whyThisRoleMatters: 'بدون محرك الذكاء الاصطناعي، ستعتمد المنظومة فقط على القواعد الثابتة (Rule-based) التي تفشل أمام هجمات التلاعب التدريجي والتزوير الدقيق للبيانات. وبدون الواجهات البرمجية وتطبيق الموبايل، لن يتمكن مهندسو الأمن من رؤية الأحداث لايف أو التحكم في الـ Rover واستلام الإنذارات في ثوانٍ.',
+    howItIsImplemented: '1. تدريب نماذج Machine Learning (Isolation Forest & Autoencoder) باستخدام Scikit-learn و PyTorch على بيانات حركة المرور الصناعية لكشف الأنماط الشاذة وتوليد Anomaly Score فوري.\n2. بناء موديول AI-Driven GRC يحسب مصفوفة المخاطر لايف ونسبة مطابقة المنظومة لمعايير IEC 62443 ويولد توصيات سد الثغرات تلقائياً.\n3. برمجة خادم Backend بـ FastAPI يدعم بروتوكول WebSockets لضمان التحديث اللحظي لبيانات الحساسات وتنبيهات الأمان بدون أي تأخير.\n4. تطوير لوحة تحكم ويب تفاعلية بـ React وتطبيق موبايل بـ Flutter يحتوي على خريطة المصنع، حالة الأجهزة، وواجهة تحكم يدوي في حركة الـ Rover في حالات الطوارئ.\n5. إعداد وتنفيذ هجمات OT/SCADA المتقدمة لمحاكاة هجمات Stuxnet و MQTT Injection والتلاعب بقراءات الحساسات الحية وتوجيه اختبارات الأمان بالتنسيق مع رقية وسام.',
     practicalLabSteps: [
       'تجهيز بيئة Python 3.11 وتثبيت مكتبات الذكاء الاصطناعي (PyTorch, Scikit-learn, Pandas, NumPy).',
       'بناء وتدريب نموذج كشف الشذوذ على قراءات الحساسات الطبيعية وتحديد عتبة الإنذار (Threshold > 80%).',
+      'برمجة موديول الـ AI-GRC لحساب مصفوفة المخاطر ونسبة الامتثال لمعيار IEC 62443 أوتوماتيكياً.',
       'تطوير وتوثيق نقاط الـ REST APIs ونظام الـ WebSockets باستخدام إطار عمل FastAPI.',
-      'تطوير واجهات الداشبورد بـ React و Tailwind CSS وتطبيق الموبايل للتحكم في الـ Rover واستقبال الـ Push Notifications.',
-      'كتابة وتجربة 7 سيناريوهات هجومية آمنة ومتحكم بها لاختبار دورة الاستجابة التلقائية كاملة.'
+      'تطوير واجهات الداشبورد بـ React وتطبيق الموبايل للتحكم في الـ Rover واستقبال الـ Push Notifications.',
+      'تنسيق سيناريوهات الهجمات الحية مع رقية وسام لتوثيق دورة الاستجابة التلقائية كاملة.'
     ],
     deliverables: [
       'نموذج الذكاء الاصطناعي لكشف الشذوذ (Isolation Forest & Autoencoders) بدقة عالية',
+      'موديول إدارة المخاطر والامتثال الذكي (AI-Driven GRC & IEC 62443 Compliance Matrix)',
       'خادم REST APIs و WebSockets بـ FastAPI لربط كافة أجزاء المنظومة لايف',
       'لوحة تحكم الويب (Web Dashboard) التفاعلية لعرض حالة المصنع والإنذارات الحية',
       'تطبيق الموبايل (Flutter/React Native) للتحكم اللاسلكي بالـ Rover واستقبال الإشعارات الفورية',
-      'حزمة سكربتات وسيناريوهات هجمات الريد تيم (7 سيناريوهات) موثقة وجاهزة للتنفيذ لايف'
+      'حزمة هجمات الريد تيم الصناعية المتقدمة (Stuxnet-style OT Attacks) موثقة وجاهزة للتنفيذ لايف'
     ],
     tools: ['Python', 'FastAPI', 'PyTorch / Scikit-learn', 'React', 'Flutter', 'Kali Linux', 'Nmap', 'Scapy', 'Docker'],
     searchKeywords: [
       'Isolation Forest anomaly detection python tutorial',
       'FastAPI WebSocket Realtime Dashboard industrial IoT',
-      'Flutter IoT monitoring app with MQTT and Push Notifications',
+      'Automated cyber risk assessment matrix python algorithm',
+      'IEC 62443 compliance checklist automation',
       'SCADA penetration testing tools python script Modbus MQTT',
       'Simulating Stuxnet PLC attack python tutorial'
     ],
@@ -39,138 +42,203 @@ export const teamMembers = [
         desc: 'تطوير نموذج Machine Learning يتعلم النمط الطبيعي لقراءات الحساسات وترافيك الشبكة، ويكشف فورياً أي تلاعب أو حقن لبيانات خبيثة مع إعطاء درجة خطورة Anomaly Score من 0 إلى 100%.'
       },
       {
-        phase: 'المرحلة 2: خادم الـ APIs و WebSockets المركزي (Backend & Integration)',
-        desc: 'برمجة خادم Backend بـ FastAPI يعمل كمحور ربط رئيسي: يستقبل قراءات MQTT، يمررها للـ AI، يرسل تنبيهات للـ SIEM، ويبعث أوامر العزل لـ pfSense ومفاتيح الـ Relay.'
+        phase: 'المرحلة 2: موديول الـ AI-GRC وإدارة المخاطر الذكية',
+        desc: 'تطوير خوارزمية ذكية تحسب مصفوفة المخاطر اللحظية للمصنع ومؤشر الامتثال لمعايير IEC 62443 و NIST وتوليد إرشادات التأمين (Hardening Recommendations).'
       },
       {
-        phase: 'المرحلة 3: لوحة التحكم الويب وتطبيق الموبايل (Full-Stack UI)',
-        desc: 'بناء داشبورد الويب وتطبيق الهاتف لمراقبة خريطة المصنع، حالة الأجهزة (أخضر/أصفر/أحمر)، استعراض نتائج فحص الـ Rover اللاسلكي، والتحكم اليدوي في الطوارئ.'
+        phase: 'المرحلة 3: خادم الـ APIs وتطبيق الموبايل والداشبورد (Full-Stack UI)',
+        desc: 'بناء خادم FastAPI وداشبورد الويب وتطبيق الهاتف لمراقبة خريطة المصنع، حالة الأجهزة (أخضر/أصفر/أحمر)، استعراض نتائج فحص الـ Rover، والتحكم اليدوي بالـ Joystick في الطوارئ.'
       },
       {
-        phase: 'المرحلة 4: سيناريوهات هجمات الريد تيم الحية (Red Teaming Playbooks)',
-        desc: 'تجهيز سكربتات هجومية متقنة (Port Scanning, MQTT Spoofing, Stuxnet-like OT tampering, Brute-force) لاختبار كفاءة الدفاع الذاتي أمام الدكاترة ولجنة التحكيم.'
+        phase: 'المرحلة 4: سيناريوهات هجمات الريد تيم الحية (Advanced Red Teaming)',
+        desc: 'تجهيز سكربتات هجومية متقنة (Stuxnet-style OT tampering, MQTT/Modbus packet injection) وتنسيق الفحص مع رقية لاختبار كفاءة الدفاع الذاتي أمام الدكاترة.'
       }
     ],
     connectionsWith: [
+      { name: 'رقية وسام', detail: 'قيادة خلية الريد تيم، استقبال تقرير فحص واختراق الويب والـ API وشبكات الوايفاي، وتنسيق هجمات العرض الحي' },
       { name: 'مروان أشرف', detail: 'استقبال قراءات الحساسات وبيانات الـ Rover عبر MQTT، وإرسال أمر isolate لتفعيل الـ Physical Kill-Switch وفصل المحطة فيزيائياً' },
       { name: 'شهد أحمد', detail: 'إرسال أمر عزل المهاجم آلياً عبر pfSense REST API إلى VLAN 50 (Quarantine) فور تأكيد هجوم الـ AI' },
       { name: 'شامل شاهين', detail: 'تغذية منصة Wazuh SIEM بتنبيهات الذكاء الاصطناعي ونتائج فحص الثغرات لربطها في التقارير الأمنية' },
-      { name: 'عمار ياسر', detail: 'نشر واستضافة الـ Backend ونماذج الـ AI على سيرفرات AWS السحابية وتجربة الهجوم على المصائد' }
+      { name: 'محمود أشرف', detail: 'استخدام نفق WireGuard المشفر وخادم MQTT الذي بناه لنقل بيانات المنظومة وتدريب الـ AI' }
     ]
   },
   {
     id: 'roqaya-wesam',
     name: 'رقيه وسام محمد علي',
-    role: 'Network Infrastructure Architect',
-    category: 'Network',
-    color: '#38bdf8',
-    badge: 'Switching & Infra',
+    role: 'Red Team Analyst & Security Testing Specialist',
+    category: 'Red Team & Software',
+    color: '#ec4899',
+    badge: 'Red Team / Pentest / Ethical Hacking',
     avatar: '👩‍💻',
-    summary: 'مسؤولة عن إعداد وضبط السويتش الفيزيائي (Cisco Switch)، تقسيم الـ 5 VLANs، ضبط الـ Trunking، حماية المنافذ (Port Security)، وبورت نسخ الترافيك (SPAN).',
-    detailedMission: 'بناء العمود الفقري الفيزيائي لشبكة المصنع وتقسيمها إلى بيئات معزولة تماماً لمنع انتشار الهجمات وتأمين كل منفذ ضد محاولات التسلل أو توصيل أجهزة غير مصرح بها.',
-    whyThisRoleMatters: 'في البيئات الصناعية، الشبكة المسطحة (Flat Network) هي أكبر خطر؛ فاختراق جهاز واحد يعني الوصول لكل المحطات. تقسيم الـ VLANs يضمن عزل الأجهزة، وبورت الـ SPAN يتيح مراقبة كل باكت وتحليلها بدون التأثير على سرعة الشبكة.',
-    howItIsImplemented: '1. استخدام كابل الكونسول للاتصال بسويتش Cisco Catalyst 2960 وضبط الإعدادات الأساسية وبروتوكول SSH الآمن.\n2. إنشاء 5 شبكات VLANs: (VLAN 10: SCADA/IoT, VLAN 20: Honeypots, VLAN 30: Rover, VLAN 40: Management, VLAN 50: Quarantine).\n3. ضبط بروتوكول 802.1Q Trunking على المنفذ المتصل بجهاز الفايروول (pfSense) لنقل الترافيك الموسوم (Tagged).\n4. تفعيل ميزة Port Security مع تثبيت عناوين MAC الموثوقة (Sticky MAC) وتحديد الإجراء (Shutdown/Restrict) عند رصد جهاز غريب.\n5. برمجة جلسة Port Mirroring (SPAN) لنسخ ترافيك شبكات SCADA و Honeypots إلى المنفذ المتصل بجهاز تحليل ومراقبة الترافيك.',
+    summary: 'مسؤولة عن اختبار اختراق تطبيقات الويب والـ APIs (Burp Suite و OWASP Top 10)، فحص واكتشاف ثغرات شبكات الوايفاي والمنافذ (مع العربية)، وإعداد تقرير الـ Pentest الرسمي.',
+    detailedMission: 'العمل جنباً إلى جنب مع محمود سلمان في خلية الريد تيم؛ تتولى الفحص الأمني الميداني والاستطلاع المتقدم للمنظومة، اختبار أمان لوحة تحكم الويب وخادم الـ APIs والتأكد من خلوها من ثغرات الحقن والوصول غير المصرح، فحص تشفير وايفاي الـ Rover والأجهزة الصناعية، وتوثيق جميع الثغرات ومسارات الاستغلال في تقرير اختبار الاختراق الرسمي.',
+    whyThisRoleMatters: 'بدون اختبار اختراق حقيقي للتطبيقات والشبكة، ستظل الواجهات ولوحات التحكم عرضة لثغرات الويب الشائعة (كالحقن والالتفاف حول المصادقة)، مما قد يمنح المهاجم مدخلاً سهلاً للسيطرة على المصنع دون لمس الحساسات. دور رقية يضمن أن المنظومة مفحوصة بدقة من الداخل ومحمية ضد أحدث تكتيكات المخترقين.',
+    howItIsImplemented: '1. استخدام نظام Kali Linux وأداة Nmap لإجراء استطلاع شامل (Reconnaissance) وفحص المنافذ والخدمات المفتوحة على أجهزة المعمل وشبكة الـ Rover.\n2. استخدام أداة Burp Suite لفحص واختبار أمان الـ Web Dashboard وخادم الـ APIs ضد ثغرات OWASP Top 10 (مثل SQL Injection, Cross-Site Scripting, Broken Authentication, IDOR).\n3. اختبار أمان شبكة الـ Wi-Fi والاتصالات اللاسلكية والتأكد من قوة التشفير وعدم وجود شبكات خداعية (Rogue APs).\n4. توثيق الثغرات المكتشفة مع تصنيف درجة الخطورة (CVSS) وكتابة تقرير اختبار الاختراق الشامل (Penetration Testing Findings Report) لكتاب التخرج.',
     practicalLabSteps: [
-      'توصيل كابل Console بالسويتش وفتح جلسة الاتصال بـ PuTTY على سرعة 9600 Baud.',
-      'إنشاء الـ 5 VLANs وتسميتها بالأسماء المعيارية للمشروع.',
-      'تخصيص منافذ Access لكل من بوردات ESP32 والمصائد والـ Rover وتفعيل Port Security.',
-      'ضبط منفذ الـ Trunk وتفعيل Encapsulation dot1q لتوصيله بفايروول pfSense.',
-      'إدخال أوامر `monitor session 1 source vlan 10,20` و `monitor session 1 destination interface` لتفعيل الـ SPAN.'
+      'تجهيز بيئة العمل وتثبيت نظام Kali Linux وأدوات الهكر الأخلاقي (Burp Suite, Nmap, Wireshark).',
+      'إنجاز المسار العملي التفاعلي Jr Penetration Tester على منصة TryHackMe العالمية.',
+      'إجراء فحص شبكي شامل (Network Reconnaissance) باستخدام Nmap و Shodan على شبكة المعمل.',
+      'اعتراض وتعديل طلبات الـ HTTP/REST APIs باستخدام Burp Suite لاكتشاف ثغرات الـ Authentication والـ Input Validation.',
+      'فحص أمان وايفاي الـ Rover واختبار إمكانية اعتراض الحزم اللاسلكية.',
+      'كتابة وتنسيق التقرير النهائي لاختبار الاختراق (Penetration Testing Report) بالثغرات المكتشفة وطريقة سدها.'
     ],
     deliverables: [
-      'ملف إعدادات السويتش الفيزيائي (Cisco 2960 Running Configuration)',
-      'مخطط تقسيم الـ 5 شبكات المعزولة (VLANs 10, 20, 30, 40, 50)',
-      'تفعيل بورت الـ SPAN Mirroring لنسخ كامل حركة الترافيك للتحليل',
-      'سياسات حماية المنافذ (Port Security & Sticky MAC Addresses)'
+      'تقرير اختبار الاختراق الشامل الرسمي (Official Penetration Testing Findings Report)',
+      'سجل فحص ثغرات الويب والـ APIs (OWASP Top 10 Security Audit Checklist)',
+      'توثيق استغلال الثغرات التجريبية في المعمل (Proof-of-Concept Exploit Scenarios)',
+      'دليل إرشادات سد الثغرات وتأمين الواجهات (Remediation & Hardening Guide)'
     ],
-    tools: ['Cisco Catalyst 2960', 'Console Cable', 'PuTTY / SecureCRT', 'Packet Tracer / Draw.io'],
+    tools: ['Kali Linux', 'Burp Suite', 'Nmap', 'OWASP Top 10', 'Wireshark', 'Metasploit', 'Postman', 'Aircrack-ng'],
     searchKeywords: [
-      'Cisco 2960 VLAN configuration step by step for beginners',
-      'How to configure Port Mirroring SPAN on Cisco Catalyst switch',
-      'Configuring 802.1Q Trunk between Cisco Switch and pfSense',
-      'Cisco Switch Port Security sticky MAC address setup',
-      'Network Segmentation best practices for ICS OT networks'
+      'TryHackMe Jr Penetration Tester walkthrough',
+      'eJPT complete course free tutorial youtube',
+      'Nmap network scanning practical guide for beginners',
+      'Burp Suite beginner tutorial intercept modify requests',
+      'OWASP Top 10 vulnerabilities explained with examples',
+      'API security testing with Burp Suite and Postman',
+      'How to write a professional penetration testing report'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: أساسيات Cisco IOS وإدارة السويتش',
-        desc: 'توصيل كابل الـ Console بالسويتش الفيزيائي، استخدام PuTTY، ضبط كلمات المرور، وفهم بنية المنافذ والأوامر الأساسية.'
+        phase: 'المرحلة 1: بيئة العمل وأساسيات الهكر الأخلاقي',
+        desc: 'تجهيز نظام Kali Linux ودراسة أساسيات الاستطلاع واكتشاف الأجهزة والخدمات الشبكية ومفاهيم اختبار الاختراق.'
       },
       {
-        phase: 'المرحلة 2: إنشاء الـ 5 VLANs وعزل البيئات',
-        desc: 'تقسيم السويتش لـ 5 شبكات (10: SCADA, 20: Honeypot, 30: Rover, 40: Mgmt, 50: Quarantine) لضمان عدم وصول أي جهاز خارج نطاقه المسموح.'
+        phase: 'المرحلة 2: مسار Jr Penetration Tester على TryHackMe',
+        desc: 'إنجاز التحديات واللابات التفاعلية لاكتساب مهارات التفكير الهجومي وفحص الثغرات واستغلالها عملياً في بيئة آمنة.'
       },
       {
-        phase: 'المرحلة 3: ضبط الـ Trunking وأمان المنافذ (Port Security)',
-        desc: 'إعداد خط الـ 802.1Q Trunk لنقل بيانات الـ VLANs لجهاز الفايروول، وقفل المنافذ غير المستخدمة وتفعيل MAC Sticky لمنع توصيل أي جهاز غريب.'
+        phase: 'المرحلة 3: اختبار اختراق الويب والـ APIs (Burp Suite & OWASP)',
+        desc: 'فحص لوحة تحكم الويب وخادم الـ APIs الخاص بالمنظومة واكتشاف ثغرات الـ Injection وتجاوز الصلاحيات وتوثيقها.'
       },
       {
-        phase: 'المرحلة 4: تفعيل بورت المراقبة (SPAN / Port Mirroring)',
-        desc: 'نسخ حركة البيانات من شبكات SCADA و Honeypot وتوجيهها مباشرة لبورت التحليل لتمكين مهندس المراقبة من التقاط الـ PCAPs.'
+        phase: 'المرحلة 4: فحص الوايفاي وكتابة تقرير الـ Pentest الرسمي',
+        desc: 'اختبار أمان اتصالات الـ Rover اللاسلكية، وتجهيز تقرير اختبار الاختراق المتكامل لعرضه ومناقشته أمام لجنة الدكاترة.'
       }
     ],
     connectionsWith: [
-      { name: 'شهد أحمد', detail: 'تسليم كابل الـ 802.1Q Trunk إلى منفذ الـ LAN في جهاز pfSense لتطبيق سياسات الحماية والتوجيه' },
-      { name: 'محمد إمبابي', detail: 'تجهيز بورت الـ SPAN لتمكينه من التقاط وتحليل الـ PCAPs وتمرير سجلات الترافيك' },
-      { name: 'مروان أشرف', detail: 'تخصيص منافذ الـ Access Ports لأجهزة ESP32 ومسار الـ Rover اللاسلكي' },
-      { name: 'محمود أشرف', detail: 'تنسيق نطاق الـ VLANs لضبط بروتوكولات الـ OT وسيرفر الـ MQTT Broker' }
+      { name: 'محمود سلمان', detail: 'العمل المشترك في خلية الريد تيم؛ محمود يطور المنظومة وهجمات الـ SCADA، ورقية تفحص الواجهات وتسلمه تقرير الثغرات' },
+      { name: 'مروان أشرف', detail: 'استلام نتائج فحص الـ Rover اللاسلكي وإجراء فحص معمق للأجهزة الصناعية والوايفاي' },
+      { name: 'محمد إمبابي', detail: 'فحص منافذ السويتش وبورت الـ SPAN والتأكد من أمان الـ Port Security وعدم تسريب بيانات' },
+      { name: 'شهد أحمد', detail: 'اختبار مدى صمود قواعد الفايروول ومنظومة Suricata أمام هجمات الاستطلاع والـ Port Scan التي تنفذها رقية' }
+    ]
+  },
+  {
+    id: 'mohamed-embaby',
+    name: 'محمد أشرف محمد إمبابي',
+    role: 'Network Infrastructure & Switching Architect',
+    category: 'Network',
+    color: '#06b6d4',
+    badge: 'Network / Cisco Switch / VLANs',
+    avatar: '👨‍💼',
+    summary: 'مسؤول عن عتاد سويتش Cisco 2960 الفيزيائي، تقسيم الـ 5 VLANs، كابلات ومنافذ الـ Access، ضبط الـ Trunking وحماية المنافذ Port Security، وبورت نسخ الترافيك SPAN.',
+    detailedMission: 'تأسيس العمود الفقري الفيزيائي لشبكة المصنع؛ ضبط سويتش Cisco 2960 وتقسيمه إلى 5 شبكات معزولة تماماً (VLANs)، تأمين منافذ السويتش باستخدام Port Security وتقنية MAC Sticky لمنع أي جهاز غريب من الاتصال بالشبكة، وتكوين بورت نسخ الترافيك (SPAN Port) لتغذية أجهزة التحليل والسوك بنسخة حية من كل الحزم المارة.',
+    whyThisRoleMatters: 'بدون مهندس بنية تحتية متمكن للسويتش، ستكون شبكة المصنع شبكة مسطحة (Flat Network) يسهل اختراقها بمجرد وصلة كابل واحدة. عزل الـ VLANs وحماية المنافذ هو خط الدفاع الأساسي الأول لمنع المهاجم من التحرك العرضي (Lateral Movement) بين مكاتب الإدارة ومحطات التحكم الحساسة.',
+    howItIsImplemented: '1. برمجة سويتش Cisco 2960 Catalyst عبر كابل الـ Console لتهيئة الإعدادات الأساسية وحسابات الإدارة الآمنة.\n2. تقسيم السويتش إلى 5 شبكات: VLAN 10 (SCADA), VLAN 20 (Honeypot), VLAN 30 (Rover), VLAN 40 (Management), VLAN 50 (Quarantine).\n3. إعداد منفذ Trunk فائق السرعة عبر بروتوكول IEEE 802.1Q لربط السويتش مباشرة بجدار الحماية pfSense (شهد أحمد).\n4. تفعيل حماية المنافذ Port Security وتحديد الحد الأقصى لعناوين الـ MAC مع تفعيل خيار Violation Shutdown لغلق المنفذ فورياً عند اكتشاف جهاز متطفل.\n5. برمجة بورت SPAN (Switched Port Analyzer) لنسخ حركة مرور شبكات الـ SCADA والمصائد وبثها لأجهزة المراقبة والتحليل.',
+    practicalLabSteps: [
+      'توصيل كابل الـ Console بالسويتش وبرمجة الـ IP الافتراضي وتأمين الوصول بـ PuTTY.',
+      'إنشاء وتسمية الـ 5 VLANs وضبط الـ Access Ports لكل محطة من محطات الـ ESP32.',
+      'تكوين منفذ 802.1Q Trunk واختبار تمرير الـ Tags لجدار الحماية pfSense.',
+      'تفعيل أوامر Port Security (switchport port-security mac-address sticky) وتجربة توصيل لابتوب غريب للتأكد من إغلاق البورت.',
+      'ضبط بورت الـ SPAN وتوصيل كارت شبكة جهاز التحليل للتأكد من استقبال حزم البيانات في Wireshark.',
+      'رسم المخطط الشبكي الفيزيائي الكامل (Physical Topology) لتوثيق مسار الكابلات في كتاب التخرج.'
+    ],
+    deliverables: [
+      'ملف إعدادات سويتش Cisco 2960 النهائي الموثق (Switch Running-Config)',
+      'مخطط الشبكة الفيزيائي وتوزيع المنافذ (Physical Network Topology & Patch Panel Map)',
+      'تقرير اختبار حماية المنافذ ومنع الأجهزة المتطفلة (Port Security Validation Report)',
+      'توثيق بورت نسخ البيانات (SPAN Mirroring Architecture)'
+    ],
+    tools: ['Cisco 2960 Catalyst', 'Cisco IOS CLI', 'Console Cable & PuTTY', 'Wireshark', 'draw.io', 'Packet Tracer'],
+    searchKeywords: [
+      'Cisco 2960 switch initial configuration console PuTTY',
+      'Configure VLANs 802.1Q trunking Cisco switch step by step',
+      'Cisco port security sticky MAC address violation shutdown',
+      'Cisco SPAN port mirroring setup Wireshark analysis',
+      'Industrial switch network segmentation best practices'
+    ],
+    roadmapPhases: [
+      {
+        phase: 'المرحلة 1: تهيئة سويتش Cisco وبرمجة الـ VLANs',
+        desc: 'ضبط السويتش الأساسي وإنشاء شبكات SCADA, Honeypot, Rover, Management, Quarantine وتعيين المنافذ بدقة.'
+      },
+      {
+        phase: 'المرحلة 2: ضبط الـ Trunking والربط بالفايروول',
+        desc: 'تجهيز خط الربط 802.1Q Trunk مع فايروول pfSense لتمكين التوجيه والفلترة بين جميع الـ VLANs.'
+      },
+      {
+        phase: 'المرحلة 3: تأمين المنافذ Port Security وبورت الـ SPAN',
+        desc: 'تفعيل قفل المنافذ على عناوين الـ MAC للأجهزة المصرح بها وتفعيل Mirroring لنسخ ترافيك المنظومة لتحليله.'
+      },
+      {
+        phase: 'المرحلة 4: الاختبار الميداني والتوثيق الكامل',
+        desc: 'محاكاة محاولة اختراق فيزيائي بتوصيل جهاز غريب وتوثيق مخطط الكابلات الفيزيائي للمناقشة.'
+      }
+    ],
+    connectionsWith: [
+      { name: 'شهد أحمد', detail: 'تسليم كابل الـ Trunk Port من السويتش لجهاز pfSense لتطبيق قواعد العزل وتوزيع عناوين IP' },
+      { name: 'محمود أشرف', detail: 'توفير المنافذ الشبكية والـ VLANs المناسبة لربط خادم الـ MQTT ونفق الـ WireGuard VPN' },
+      { name: 'مروان أشرف', detail: 'تحديد منافذ الـ Access الفيزيائية لكل محطة ESP32 ونقطة وصول الـ Rover' },
+      { name: 'شامل ورقية', detail: 'فتح بورت الـ SPAN Mirroring لبث ترافيك المحطات للسوك لتحليله واختباره أمنياً' }
     ]
   },
   {
     id: 'mahmoud-ashraf',
     name: 'محمود أشرف السيد عبداللطيف',
-    role: 'OT Protocols & Simulation Architect',
+    role: 'OT Protocols, VPN & Simulation Architect',
     category: 'Network',
-    color: '#818cf8',
-    badge: 'OT & Industrial Protocols',
-    avatar: '👨‍💻',
-    summary: 'مسؤول عن هندسة بروتوكولات المصانع (Modbus TCP, MQTT Broker, OPC-UA)، إعداد التوجيه بين الشبكات، والمحاكاة الافتراضية الموسعة على EVE-NG/GNS3.',
-    detailedMission: 'هندسة لغة التخاطب بين الحساسات والمتحكمات الصناعية والخوادم المركزية، وضمان تدفق بيانات المصنع بسرعة عالية وزمن استجابة فائق الانخفاض، مع بناء بيئة محاكاة افتراضية لمصنع ضخم تبرهن على إمكانية تطبيق المشروع في منشآت كبرى.',
-    whyThisRoleMatters: 'الأنظمة الصناعية تعتمد على بروتوكولات متخصصة غير مشفرة تقليدياً مثل Modbus و MQTT. ضبط وسيط الرسائل (Broker) وتأمينه وتنظيم قنوات الـ Topics يمنع تداخل البيانات، والمحاكاة على EVE-NG تمنح المشروع وزناً أكاديمياً كبيراً بإثبات قابلية التوسع (Scalability).',
-    howItIsImplemented: '1. تثبيت Mosquitto MQTT Broker على نظام Linux وتأمينه بكلمات سر وصلاحيات وصول (ACLs) محددة لكل محطة.\n2. تصميم هيكل Topics هرمي منظم: `/factory/station1/cooling/telemetry`, `/factory/station2/furnace/telemetry`, `/factory/commands/isolate`.\n3. إعداد خادم محاكاة لبروتوكول Modbus TCP باستخدام مكتبة `pymodbus` لمحاكاة قراءة وكتابة سجلات الـ Holding Registers.\n4. بناء توبولوجي متقدم على EVE-NG يضم راوترات Cisco و FortiGate و SCADA PLCs لمحاكاة مصنع بتروكيماويات أو أدوية متعدد الفروع.',
+    color: '#3b82f6',
+    badge: 'OT Protocols / WireGuard / EVE-NG',
+    avatar: '👨‍🔧',
+    summary: 'مسؤول عن خادم Mosquitto MQTT وتأمينه، بروتوكول Modbus TCP الصناعي، بناء نفق WireGuard VPN المشفر بين المعمل والسحابة، ومحاكاة الشبكات على EVE-NG.',
+    detailedMission: 'هندسة لغة الاتصال الصناعية وتأمين نقل البيانات الحساسة؛ تثبيت وتأمين خادم Mosquitto MQTT وضبط قنوات المواضيع (Topics) لمحطات المصنع، إعداد بروتوكول Modbus TCP الصناعي لمحاكاة الأجهزة الثقيلة، بناء نفق WireGuard VPN فائق السرعة والتشفير لربط المعمل الفيزيائي بسحابة AWS بأمان، وبناء محاكاة افتراضية موسعة لمصنع ضخم على EVE-NG لإثبات إمكانية تطبيق المشروع على كبرى المنشآت الصناعية.',
+    whyThisRoleMatters: 'بدون بروتوكولات صناعية منضبطة ومؤمنة، لن تفهم الحساسات ومحطات الـ SCADA بعضها البعض، وسيكون من السهل تزوير الرسائل. وبدون نفق WireGuard المشفر، ستنتقل قراءات المصنع وأوامر التحكم عبر الإنترنت مكشوفة لأي متلصص (Man-in-the-Middle).',
+    howItIsImplemented: '1. تثبيت وضبط خادم Mosquitto MQTT وتفعيل التشفير والمصادقة بكلمات سر قوية لمنع الوصول العشوائي للبيانات.\n2. إعداد بيئة Modbus TCP باستخدام pymodbus و ModRSsim2 للتواصل مع محطات التحكم الصناعية وقراءة السجلات (Holding Registers).\n3. بناء وضبط نفق WireGuard VPN (Site-to-Site) بين جدار حماية المعمل وسيرفر AWS EC2 لضمان اتصال سحابي مشفر بأقل زمن تأخير (Low Latency).\n4. قياس استقرار وسرعة نفق الـ VPN باستخدام أداة iperf3 والتأكد من عدم سقوط حزم الـ Telemetry.\n5. تصميم وبناء توبولوجي افتراضي كامل على EVE-NG يحاكي شبكة صناعية كبرى لعرضها في المناقشة.',
     practicalLabSteps: [
-      'تثبيت Mosquitto على Ubuntu وتعديل ملف `mosquitto.conf` لمنع الوصول المجهول (allow_anonymous false).',
-      'إنشاء ملف المستخدمين المشفر `mosquitto_passwd` وضبط صلاحيات كل بوردة ESP32.',
-      'كتابة سكربت Python لاختبار النشر والاشتراك (Publish/Subscribe) وقياس زمن وصول الرسائل (Latency Benchmarking).',
-      'بناء سيناريو EVE-NG المتكامل وحفظ ملفات الـ UNetLab لربطها في العرض التقديمي.'
+      'تثبيت سيرفر Mosquitto MQTT على بيئة Linux وضبط ملف mosquitto.conf وتفعيل الـ Authentication.',
+      'إنشاء هيكل الـ Topics الصناعية (factory/station1/telemetry, factory/commands/quarantine).',
+      'توليد مفاتيح التشفير العامة والخاصة لبروتوكول WireGuard وبناء النفق مع سيرفر AWS.',
+      'اختبار سرعة واستقرار النفق بـ iperf3 و ping والتأكد من عبور بيانات الـ MQTT بسلاسة.',
+      'برمجة محاكي Modbus TCP والتأكد من استجابة السجلات لقراءات الحساسات.',
+      'بناء شبكة المصنع الافتراضية على EVE-NG وتجهيز لقطات الشاشة وسيناريو التوسع للمناقشة.'
     ],
     deliverables: [
-      'سيرفر Mosquitto MQTT Broker مؤمن ومنظم بـ Topics صناعية',
-      'محاكي بروتوكول Modbus TCP للأجهزة والمحطات الصناعية',
-      'سيناريو محاكاة شبكة صناعية متكاملة على EVE-NG',
-      'جداول التوجيه والتأكد من انخفاض زمن الاستجابة (Low Latency)'
+      'خادم Mosquitto MQTT مؤمن ويعمل بالمصادقة الرسمية للبيانات الصناعية',
+      'نفق WireGuard VPN مشفر ومستقر يربط المعمل بسحابة AWS (Site-to-Site)',
+      'محاكي بروتوكول Modbus TCP الصناعي مع توثيق عناوين السجلات (Registers Map)',
+      'معمل محاكاة الشبكات الصناعية الكامل على EVE-NG / GNS3'
     ],
-    tools: ['Mosquitto MQTT', 'Modbus TCP', 'EVE-NG / GNS3', 'Wireshark', 'Python pymodbus'],
+    tools: ['Mosquitto MQTT', 'WireGuard VPN', 'Modbus TCP', 'EVE-NG / GNS3', 'iperf3', 'Wireshark', 'Python pymodbus'],
     searchKeywords: [
-      'How Modbus TCP works Wireshark packet analysis',
-      'Deploying Mosquitto MQTT broker Ubuntu with user authentication',
-      'EVE-NG industrial network topology simulation guide',
-      'Inter-VLAN routing configuration with Router-on-a-stick',
-      'Python pymodbus tutorial read and write registers'
+      'Install and configure Mosquitto MQTT broker password authentication',
+      'Modbus TCP protocol tutorial pymodbus python',
+      'WireGuard site-to-site VPN tunnel pfSense to AWS EC2',
+      'EVE-NG industrial SCADA network simulation topology',
+      'MQTT secure topic architecture for industrial IoT'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: دراسة بنية بروتوكولات الـ OT الصناعية',
-        desc: 'فهم حزم بيانات Modbus TCP (بورت 502) و MQTT (بورت 1883) وهيكل الرسائل وسجلات الحساسات وطريقة التلاعب بها.'
+        phase: 'المرحلة 1: إعداد وتأمين خادم Mosquitto MQTT',
+        desc: 'تثبيت الوسيط (Broker) وضبط هيكل الـ Topics وتفعيل قواعد التحقق من هوية المحطات لمنع التجسس أو تزوير البيانات.'
       },
       {
-        phase: 'المرحلة 2: نشر وتأمين Mosquitto MQTT Broker',
-        desc: 'تثبيت السيرفر وضبط Authentication بقفل الحسابات بكلمات سر وتشفير TLS اختياري وضبط Topics هرمية منظمة لمحطات المصنع.'
+        phase: 'المرحلة 2: إعداد بيئة بروتوكول Modbus TCP الصناعي',
+        desc: 'برمجة محاكي قراءات الحساسات والتحكم في المحركات عبر Modbus TCP لتمثيل بيئة SCADA واقعية.'
       },
       {
-        phase: 'المرحلة 3: محاكاة المصنع الموسع على EVE-NG',
-        desc: 'بناء توبولوجي متقدم لمصنع ضخم يضم عشرات الراوترات والمتحكمات لإثبات قابلية توسع المشروع أمام لجنة المناقشة.'
+        phase: 'المرحلة 3: بناء نفق WireGuard VPN المشفر للسحابة',
+        desc: 'توليد المفاتيح وربط شبكة المعمل الفيزيائية بسيرفرات AWS بسلاسة لنقل بيانات التهديدات والـ Telemetry.'
       },
       {
-        phase: 'المرحلة 4: تحسين مسارات التوجيه وسرعة النقل',
-        desc: 'اختبار سرعة انتقال البيانات بين الحساسات والفايروول والداشبورد وضمان عدم وجود تأخير يؤثر على إشارات الحساسات.'
+        phase: 'المرحلة 4: محاكاة المصنع الموسع على EVE-NG',
+        desc: 'بناء شبكة صناعية موسعة افتراضية تثبت للجنة التحكيم أن المنظومة قابلة للتطبيق على مصانع بترول أو طاقة عملاقة.'
       }
     ],
     connectionsWith: [
-      { name: 'مروان أشرف', detail: 'استقبال رسائل MQTT من بوردات ESP32 والتأكد من توافق الـ Topics وتنسيق JSON وتأكيد استلام الأوامر' },
-      { name: 'محمود سلمان', detail: 'توفير تدفق البيانات للـ Backend ونماذج الذكاء الاصطناعي عبر اشتراكات الـ MQTT المنظمة' },
-      { name: 'رقيه وسام', detail: 'تثبيت الـ Broker والمحاكاة على الـ VLANs المخصصة بالسويتش' },
-      { name: 'شهد أحمد', detail: 'التأكد من مطابقة سياسات التوجيه بين الشبكات مع قواعد الفايروول' }
+      { name: 'مروان أشرف', detail: 'استقبال نشر بيانات محطات ESP32 وعربة الـ Rover على مواضيع خادم Mosquitto MQTT' },
+      { name: 'محمود سلمان', detail: 'توفير اشتراك الـ MQTT وقناة نفق WireGuard ليتمكن الذكاء الاصطناعي من تحليل البيانات ونقل الأوامر' },
+      { name: 'عمار ياسر', detail: 'ربط نفق WireGuard VPN بسيرفرات AWS السحابية والمصائد الخداعية' },
+      { name: 'شهد أحمد', detail: 'التأكد من سماح الفايروول بمرور ترافيك نفق WireGuard (UDP 51820) وترافيك MQTT (بورت 1883)' }
     ]
   },
   {
@@ -178,289 +246,237 @@ export const teamMembers = [
     name: 'شهد أحمد جوده محمد',
     role: 'Firewall & Network Security Specialist',
     category: 'Network',
-    color: '#f43f5e',
-    badge: 'Firewall & IDS/IPS',
-    avatar: '👩‍💻',
-    summary: 'مسؤولة عن بناء وإدارة جدار الحماية (pfSense Firewall)، كتابة سياسات وقواعد المرور الصارمة (ACLs)، تفعيل Suricata IDS/IPS، وبرمجة آلية العزل التلقائي (Dynamic Quarantine).',
-    detailedMission: 'إقامة الحصن الأمني والجدار الناري للمنظومة الذي يراقب كل اتصال، ويمنع أي حركة غير مصرح بها بين الشبكات، ويستخدم فحص الحزم المعمق (Deep Packet Inspection) لكشف ومنع الهجمات ونقل الأجهزة المخترقة فوراً إلى الحجر الصحي.',
-    whyThisRoleMatters: 'بدون جدار حماية قوي وقواعد ACLs محكمة، يمكن لأي مهاجم مخترق لحساس أو مصيدة أن يتسلل إلى شبكة الإدارة أو الخوادم المركزية (Lateral Movement). الفايروول هو الأداة التنفيذية التي تحول قرارات الذكاء الاصطناعي إلى عزل شبكي حقيقي في أجزاء من الثانية.',
-    howItIsImplemented: '1. تثبيت pfSense OS على جهاز مخصص وضبط واجهة WAN للاتصال الخارجي وسحابة AWS، وواجهة LAN مقسمة إلى 5 Virtual Interfaces (VLANs 10, 20, 30, 40, 50).\n2. كتابة سياسات جدار الحماية الصارمة (Zero Trust approach): منع ترافيك SCADA من الوصول للـ Management، والسماح للمصائد باستقبال الهجمات مع منعها الصارم من الاتصال بالخارج.\n3. تثبيت حزمة Suricata وضبطها كـ IDS/IPS مع تفعيل قواعد Emerging Threats لاكتشاف هجمات DoS واستغلال الثغرات.\n4. بناء آلية Dynamic Quarantine عبر برمجة سكربت أو استدعاء pfSense REST API لتعديل جداول الحجب (pfctl tables) ونقل الـ IP المشبوه إلى VLAN 50 فورياً.',
+    color: '#10b981',
+    badge: 'Firewall / Suricata IDS/IPS / Quarantine',
+    avatar: '👩‍💼',
+    summary: 'مسؤولة عن جدار الحماية pfSense، كتابة وتطبيق قواعد الـ ACLs الصارمة، تشغيل منظومة Suricata IDS/IPS، وآلية العزل التلقائي والحجر الصحي (Dynamic Quarantine).',
+    detailedMission: 'حماية حدود المنظومة والتحكم الكامل في حركة المرور بين الشبكات؛ تحويل جهاز مخصص إلى جدار ناري pfSense عالي الأداء، كتابة سياسات العزل والـ ACLs الدقيقة بين الـ 5 VLANs، تثبيت وتكوين منظومة Suricata IDS/IPS لفحص الحزم والـ Payloads الخبيثة ومنع الهجمات، وبناء آلية العزل التلقائي (Dynamic Quarantine) التي تستقبل أوامر الذكاء الاصطناعي وتنقل الأجهزة المخترقة فوراً إلى VLAN 50 المعزولة.',
+    whyThisRoleMatters: 'الفايروول هو البوابة الإجبارية الوحيدة لكل حزمة بيانات في المصنع. بدون فايروول محكم وقواعد صارمة، يستطيع أي جهاز مصاب اختراق باقي أجزاء المصنع. ومنظومة Suricata هي صمام الأمان الفوري الذي يلتقط التسلل ويعزله في أجزاء من الثانية.',
+    howItIsImplemented: '1. تثبيت وتكوين نظام pfSense OS على جهاز مخصص وربطه بكابل الـ Trunk القادم من سويتش إمبابي.\n2. كتابة سياسات جدار الحماية (Firewall Rules) الصارمة التي تعزل شبكة الـ SCADA عن الإدارة، وتسمح فقط بالمرور المصرح به.\n3. تثبيت حزمة Suricata IDS/IPS على pfSense وتفعيل مجموعات القواعد المتخصصة في كشف الهجمات الشبكية والصناعية.\n4. كتابة قواعد Suricata مخصصة لرصد هجمات المشروع المحددة (Port Scans, MQTT Spoofing, Brute-force).\n5. بناء آلية العزل الديناميكي (Dynamic Quarantine) عبر الـ API أو سكربتات pfctl لنقل الأجهزة المصابة فورياً إلى VLAN 50 المعزولة تماماً.\n6. تفعيل توجيه سجلات الـ Syslog من الفايروول ومنظومة Suricata مباشرة إلى سيرفر Wazuh SIEM الخاص بشامل.',
     practicalLabSteps: [
-      'تثبيت pfSense من فلاشة USB وضبط إعدادات الشبكة ومنافذ الـ Ethernet.',
-      'إنشاء واجهات الـ VLANs الخمس وضبط DHCP Server لكل شبكة.',
-      'كتابة وتجربة قواعد المرور واختبار العزل بـ Ping و Nmap للتأكد من حظر الاتصالات غير المصرح بها.',
-      'تثبيت وتحديث قواعد Suricata واختبار تشغيلها في نمط الـ Inline Blocking لمنع الهجمات.',
-      'برمجة وتجربة سكربت نقل الجهاز المصاب لـ VLAN 50 والتأكد من إرسال سجلات الحظر لـ Wazuh.'
+      'تثبيت نظام pfSense وضبط واجهات الشبكة (WAN, LAN, وواجهات الـ VLANs الفرعية).',
+      'تطبيق جدول قواعد الـ ACLs ومنع الاتصال المباشر بين شبكة SCADA والشبكات الخارجية.',
+      'تثبيت وتحديث حزمة Suricata IDS/IPS وتفعيل وضع الحظر التلقائي (Inline IPS Blocking Mode).',
+      'كتابة قواعد فحص مخصصة لرصد حزم الـ Nmap وحقن بيانات MQTT المشبوهة.',
+      'برمجة سكربت العزل التلقائي (Quarantine Trigger) واختبار نقل IP إلى VLAN 50 في أقل من ثانية.',
+      'تكوين إرسال الـ Syslogs لايف إلى Wazuh والتأكد من ظهور التنبيهات في الـ SIEM.'
     ],
     deliverables: [
-      'نظام pfSense متكامل بقواعد حماية صارمة بين الـ VLANs',
-      'قواعد ومنظومة رصد التسلل Suricata IDS/IPS مفعلة ومحدثة',
-      'آلية عزل الأجهزة المخترقة تلقائياً بنقلها لـ VLAN 50 (Quarantine)',
-      'سجلات الترافيك وتوجيه الـ Syslogs لمنصة الـ SIEM'
+      'جهاز جدار ناري pfSense متكامل ومضبوط بالقواعد الرسمية لمنظومة المصنع',
+      'مصفوفة قواعد العزل الصارمة بين الـ VLANs (Firewall ACL Matrix)',
+      'منظومة Suricata IDS/IPS مفعلة ومزودة بقواعد مخصصة لحماية بروتوكولات الـ OT',
+      'آلية العزل التلقائي اللحظية (Dynamic Quarantine Automation Engine)'
     ],
-    tools: ['pfSense', 'Suricata IDS/IPS', 'pfSense REST API / pfctl', 'Snort rules', 'Wireshark'],
+    tools: ['pfSense', 'Suricata IDS/IPS', 'Snort Rules', 'pfctl', 'Syslog', 'Python Requests / API', 'Wireshark'],
     searchKeywords: [
-      'pfSense complete beginner guide installation and VLAN setup',
-      'pfSense firewall rules best practices network segmentation',
-      'Installing and configuring Suricata on pfSense step by step',
-      'Automating pfSense firewall rules via API or script python',
-      'pfSense quarantine VLAN setup for infected endpoints'
+      'pfSense router on a stick VLAN configuration tutorial',
+      'pfSense firewall rules network isolation best practices',
+      'Install and configure Suricata IDS IPS on pfSense',
+      'Suricata custom rules writing examples for network attacks',
+      'pfSense automate IP blocking dynamic quarantine python',
+      'pfSense syslog forwarding to Wazuh SIEM'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: تثبيت وإعداد pfSense على جهاز مخصص',
-        desc: 'تحويل جهاز كمبيوتر/لابتوب قديم إلى جدار حماية احترافي وضبط واجهات WAN و LAN و 5 VLAN Sub-interfaces.'
+        phase: 'المرحلة 1: تثبيت وتجهيز جدار الحماية pfSense',
+        desc: 'تنصيب النظام وضبط واجهات الشبكة واستقبال الـ Trunk من السويتش وتفعيل خوادم الـ DHCP للشبكات المعزولة.'
       },
       {
-        phase: 'المرحلة 2: كتابة سياسات وقواعد المرور الصارمة (ACLs)',
-        desc: 'منع وصول ترافيك الحساسات لشبكة الإدارة، والسماح للمصائد باستقبال الهجمات مع منعها من الهجوم للخارج.'
+        phase: 'المرحلة 2: كتابة وتطبيق قواعد الـ ACLs الصارمة',
+        desc: 'بناء مصفوفة حظر وسماح دقيقة تفصل شبكة SCADA الحساسة وتسمح للـ Rover بالفحص، وتمنع خروج ترافيك المصائد.'
       },
       {
-        phase: 'المرحلة 3: تفعيل وفحص الحزم بـ Suricata IDS/IPS',
-        desc: 'تشغيل حزم قواعد الحماية المتقدمة (Emerging Threats) لرصد محاولات استغلال الثغرات وهجمات DoS فورياً.'
+        phase: 'المرحلة 3: تشغيل Suricata IDS/IPS وكتابة القواعد المخصصة',
+        desc: 'تفعيل الفحص العميق للحزم (Deep Packet Inspection) لرصد هجمات الـ Port Scan والـ Spoofing وتنبيه المنظومة.'
       },
       {
-        phase: 'المرحلة 4: بناء آلية الحجر الصحي الذاتي (Dynamic Quarantine)',
-        desc: 'برمجة استجابة فورية تنقل أي IP مشبوه تلقائياً إلى VLAN 50 المعزول كلياً عبر pfSense API أو جداول الـ Block.'
+        phase: 'المرحلة 4: بناء محرك الحجر التلقائي (Dynamic Quarantine)',
+        desc: 'ربط الفايروول بأوامر الذكاء الاصطناعي لنقل أي عنوان IP مشبوه تلقائياً إلى VLAN 50 المعزولة بالكامل وتمرير السجلات لـ Wazuh.'
       }
     ],
     connectionsWith: [
-      { name: 'رقيه وسام', detail: 'استقبال الـ Trunk القادم من السويتش وتطبيق القواعد على كل VLAN والتأكد من صحة الـ Tagging' },
-      { name: 'محمد إمبابي', detail: 'السماح بمرور ترافيك نفق WireGuard VPN المشفر وتوجيه الـ Syslogs بأمان' },
-      { name: 'محمود سلمان', detail: 'استقبال أوامر العزل الآلية القادمة من الـ AI والـ API لنقل المهاجم للحجر الصحي' },
-      { name: 'شامل شاهين', detail: 'إرسال سجلات وتنبيهات Suricata لمنظومة Wazuh لتحليلها وعرضها في الداشبورد' }
-    ]
-  },
-  {
-    id: 'mohamed-embaby',
-    name: 'محمد أشرف محمد إمبابي',
-    role: 'VPN Tunnels & Telemetry Specialist',
-    category: 'Network',
-    color: '#06b6d4',
-    badge: 'VPN & Traffic Telemetry',
-    avatar: '👨‍💻',
-    summary: 'مسؤول عن إنشاء نفق VPN مشفر ومستقر يربط شبكة المعمل بسحابة AWS (WireGuard)، جمع وتحليل الباكتس (PCAP / Wireshark / tcpdump)، وتمرير سجلات الشبكة لمنصة الـ SIEM.',
-    detailedMission: 'تأمين الاتصال بين البنية الفيزيائية في المعمل والمنصة السحابية بنفق مشفر عالي السرعة، والتقاط حركة المرور في الوقت الفعلي لتحليل الهجمات واستخراج البصمات وتغذية نماذج الذكاء الاصطناعي بالبيانات.',
-    whyThisRoleMatters: 'نقل سجلات الأجهزة وترافيك المصنع إلى السحابة عبر الإنترنت العام دون نفق VPN يعرض البيانات الصناعية للتنصت والاعتراض (Man-in-the-Middle). استخدام WireGuard يضمن تشفيراً فائقاً وسرعة عالية، والتقاط الـ PCAPs يمثل المادة الخام التي يعتمد عليها الـ SOC والـ AI.',
-    howItIsImplemented: '1. توليد مفاتيح التشفير (Public/Private Keys) وضبط خادم WireGuard على سيرفر AWS EC2 وعميل WireGuard على فايروول pfSense.\n2. ضبط مسارات التوجيه (Routing Tables) لربط الشبكة المحلية بالمعمل (192.168.0.0/16) بشبكة السحابة (10.0.0.0/16).\n3. برمجة سكربت Python/Bash يستمع لبورت الـ SPAN ويستخدم `tcpdump` لتجزئة الترافيك إلى ملفات PCAP دورية ورفعها إلى AWS S3.\n4. إعداد خدمة `rsyslog` لتوجيه سجلات الفايروول والسويتش إلى سيرفر Wazuh SIEM.\n5. قياس الأداء وعرض استهلاك الباندويث وجودة الاتصال باستخدام `iperf3` و `ntopng`.',
-    practicalLabSteps: [
-      'تثبيت WireGuard على جهاز Linux وتوليد أزواج المفاتيح وضبط ملفات التكوين `wg0.conf`.',
-      'تفعيل النفق المشفر واختبار الاتصال والـ Handshake وقياس سرعة النقل والـ Latency بـ iperf3.',
-      'كتابة سكربت أوتوماتيكي لالتقاط الترافيك بـ tcpdump مع تدوير الملفات كل ساعة وتسميتها بالوقت.',
-      'تحليل حزم هجمات الـ Red Team بـ Wireshark واستخراج مؤشرات الاختراق (IoCs).',
-      'توجيه سجلات Syslog عبر نفق الـ VPN لسيرفر Wazuh والتأكد من وصول السجلات دون انقطاع.'
-    ],
-    deliverables: [
-      'نفق WireGuard Site-to-Site VPN مشفر يربط المعمل بالسحابة',
-      'سكربت التقاط وتحليل الـ PCAPs أوتوماتيكياً من بورت الـ SPAN',
-      'توجيه الـ Syslogs من السويتش والفايروول لسيرفر Wazuh',
-      'لوحة قياس استهلاك الباندويث وجودة واستقرار الاتصال'
-    ],
-    tools: ['WireGuard', 'Wireshark', 'tcpdump / tshark', 'rsyslog', 'iperf3 / ntopng', 'Python'],
-    searchKeywords: [
-      'WireGuard site to site VPN pfSense to AWS EC2 ubuntu',
-      'Automated network traffic capture using tcpdump and python script',
-      'Wireshark filters for finding brute force and port scans',
-      'Forwarding pfSense syslogs to Wazuh SIEM server',
-      'Network bandwidth and latency monitoring tools for Linux'
-    ],
-    roadmapPhases: [
-      {
-        phase: 'المرحلة 1: بناء نفق WireGuard Site-to-Site',
-        desc: 'إنشاء نفق VPN مشفر وآمن يربط شبكة الأجهزة في المعمل بسحابة AWS بسرعة فائقة وبدون تأخير لنقل السجلات.'
-      },
-      {
-        phase: 'المرحلة 2: برمجة سكربت التقاط الـ PCAP الأوتوماتيكي',
-        desc: 'التنصت على بورت الـ SPAN وسحب الباكتس وتقسيمها وتخزينها محلياً أو رفعها لسحابة AWS S3.'
-      },
-      {
-        phase: 'المرحلة 3: تحليل ترافيك الهجمات بـ Wireshark',
-        desc: 'استخراج مؤشرات الاختراق (IoCs)، وتحليل سلوكيات الـ Port Scanning والـ Brute Force بالـ Filters.'
-      },
-      {
-        phase: 'المرحلة 4: توجيه السجلات (Syslog Forwarding)',
-        desc: 'ربط سجلات السويتش والفايروول بسيرفر Wazuh التابع لشامل لتحليلها لحظياً.'
-      }
-    ],
-    connectionsWith: [
-      { name: 'عمار ياسر', detail: 'ربط طرفي نفق WireGuard بين شبكة المعمل وسيرفرات AWS السحابية وتأمين مسار الاتصال' },
-      { name: 'رقيه وسام', detail: 'التوصيل على بورت الـ SPAN بالسويتش لالتقاط حزم البيانات' },
-      { name: 'شامل شاهين', detail: 'تزويد الـ SIEM بسجلات وترافيك الشبكة الكامل عبر الـ Syslogs' },
-      { name: 'محمود سلمان', detail: 'توفير ملفات الـ PCAP لاستخدامها في تدريب وتغذية نماذج الذكاء الاصطناعي' }
+      { name: 'محمد إمبابي', detail: 'استقبال كابل الـ Trunk من السويتش وتوزيع الـ Sub-interfaces للشبكات الخمسة' },
+      { name: 'محمود سلمان', detail: 'استقبال أوامر العزل اللحظية عبر pfSense API ونقل الأجهزة المهاجمة فوراً لـ VLAN 50' },
+      { name: 'محمود أشرف', detail: 'السماح بمرور ترافيك نفق WireGuard VPN وترافيك MQTT عبر الفايروول بدون إعاقة' },
+      { name: 'شامل شاهين', detail: 'إرسال سجلات المرور وتنبيهات Suricata عبر Syslog إلى سيرفر Wazuh SIEM لايف' },
+      { name: 'رقية وسام', detail: 'اختبار صمود قواعد الفايروول أمام محاولات رقية لاختراق المنافذ والالتفاف حول القواعد' }
     ]
   },
   {
     id: 'shamel-shaheen',
     name: 'شامل محمد علي شاهين',
-    role: 'SOC Analyst (Blue Team Operations)',
+    role: 'SOC Analyst / Blue Team Operations Specialist',
     category: 'Cybersecurity & SOC',
-    color: '#3b82f6',
-    badge: 'SIEM & Incident Response',
-    avatar: '👨‍💻',
-    summary: 'مسؤول عن بناء وإدارة مركز العمليات الأمنية (Wazuh SIEM)، كتابة قواعد الرصد المخصصة للمشروع، تتبع التنبيهات لايف، وإعداد كتيبات الاستجابة للحوادث (Incident Response Playbooks).',
-    detailedMission: 'إدارة مركز المراقبة والعمليات الأمنية (SOC) للمنظومة، وجمع وتحليل السجلات من كافة الأجهزة، وكتابة قواعد كشف التهديدات المخصصة لرصد أي نشاط مريب، وتوثيق إجراءات الاستجابة للحوادث وفق المعايير العالمية.',
-    whyThisRoleMatters: 'بدون محلل SOC ومنصة SIEM مركزية، ستكون السجلات مبعثرة في كل جهاز ولن يلاحظ أحد الهجوم إلا بعد وقوع الكارثة. الـ SOC يربط الخيوط معاً (Log Correlation)، ويحدد مصدر الهجوم، ويقود خطة الاحتواء والتعافي الفوري.',
-    howItIsImplemented: '1. نشر منصة Wazuh (Manager, Indexer, Dashboard) على خادم سحابي لتجميع وتحليل السجلات.\n2. تثبيت Wazuh Agents على خوادم المصائد وأجهزة الفايروول وخادم الباكيند واستقبال سجلات السويتش عبر Syslog.\n3. كتابة قواعد XML مخصصة للمشروع (CYF Detection Rules) لرصد محاولات كسر كلمات السر، القراءات الشاذة، والاتصال بالمصائد.\n4. تصميم لوحة تحكم أمنية تفاعلية بـ Kibana تعرض خريطة المهاجمين ومستوى الخطورة وسجل الإنذارات الحية.\n5. كتابة Runbooks تفصيلية للاستجابة للحوادث (Triage -> Containment -> Eradication -> Recovery).',
+    color: '#8b5cf6',
+    badge: 'SOC / Wazuh SIEM / Incident Response',
+    avatar: '🕵️‍♂️',
+    summary: 'مسؤول عن بناء وإدارة منصة Wazuh SIEM، كتابة قواعد الرصد المخصصة بـ XML، تتبع وتحليل الإنذارات اللحظية، وإعداد كتيبات الاستجابة للحوادث (IR Playbooks).',
+    detailedMission: 'إدارة العين الساهرة للمنظومة (Security Operations Center)؛ نشر منصة Wazuh SIEM، تجميع وتحليل السجلات من كافة الأجهزة (السويتش، الفايروول، خوادم الـ Backend، ومصائد العسل)، كتابة قواعد رصد متقدمة (Custom XML Rules) تكتشف الهجمات الصناعية غير المألوفة، وتصميم لوحات مراقبة تفاعلية تمكن مسؤولي الأمن من رؤية التهديدات وفرزها (Triage) وإعداد تقارير الحوادث الجنائية.',
+    whyThisRoleMatters: 'في أي بنية صناعية، تتولد آلاف السجلات كل دقيقة. بدون محلل سوك محترف ومنصة SIEM مركزية، ستضيع مؤشرات الاختراق (IoCs) وسط الزحام، ولن يلاحظ أحد تسلل المهاجم إلا بعد حدوث الكارثة. شامل يحول السجلات الصامتة إلى إنذارات وإجراءات حاسمة.',
+    howItIsImplemented: '1. تثبيت منصة Wazuh (Wazuh Manager, Indexer, Dashboard) على خادم Ubuntu سحابي أو محلي وتأمين الوصول إليها.\n2. نشر وتكوين Wazuh Agents على خوادم المنظومة وضبط استقبال سجلات Syslog من سويتش Cisco وفايروول pfSense.\n3. كتابة وتطوير قواعد رصد مخصصة (Custom Decoders & XML Rules) في ملف local_rules.xml لرصد هجمات SCADA والـ Spoofing وكسر كلمات المرور.\n4. تصميم لوحات تحكم متقدمة في Wazuh Dashboard تعرض توزيع الهجمات ومستويات الخطورة وجدول التنبيهات لايف.\n5. صياغة كتيب الاستجابة للحوادث (Incident Response Playbook) الذي يوضح خطوات احتواء التهديد وتوثيق الحادثة وفق المعايير العالمية.',
     practicalLabSteps: [
-      'تثبيت Wazuh All-in-one على خادم Ubuntu وتأمين الاتصال بـ SSL Certificates.',
-      'تثبيت عملاء Wazuh Agents والتحقق من ظهور الأجهزة في حالة Active على لوحة التحكم.',
-      'كتابة واختبار ملف قواعد XML مخصص في مسار `/var/ossec/etc/rules/local_rules.xml`.',
-      'بناء Visualizations ولوحات مراقبة متقدمة في Wazuh Dashboard تعرض الإنذارات ذات الخطورة العالية (Level > 10).',
-      'توثيق ومحاكاة خطوات الاستجابة لحادثة اختراق محطة الأفران وإعداد تقرير Incident Report احترافي.'
+      'تثبيت خادم Wazuh عبر Docker أو الحزم الرسمية على سيرفر Ubuntu والتأكد من سلامة الخدمات.',
+      'توليد وتثبيت مفاتيح الـ Agents على خوادم المعمل وتأكيد ظهورها بحالة Active في الداشبورد.',
+      'تكوين rsyslog لاستقبال سجلات pfSense وسويتش Cisco وتوجيهها لقناة Wazuh التحليلية.',
+      'كتابة وفحص قواعد XML مخصصة لاكتشاف التلاعب بحساسات الـ ESP32 وإنذارات الـ Honeypots.',
+      'إجراء محاكاة لهجمات الريد تيم والتأكد من تصعيد الإنذار للمستوى Level 12+ في لوحة الـ SOC.',
+      'كتابة تقرير الاستجابة للحادثة (Incident Report) وتجهيز لوحة العرض المباشر ليوم المناقشة.'
     ],
     deliverables: [
-      'منصة Wazuh SIEM مركزية تجمع كل سجلات الأجهزة والمصائد والشبكة',
-      'قواعد اكتشاف مخصصة (Custom XML Rules) خاصة بسيناريوهات CyberForge',
-      'داشبورد أمني متقدم يعرض التنبيهات ومستوى الخطورة لايف',
-      'كتيب الاستجابة للحوادث الأمنية (Incident Response Playbook)'
+      'منصة Wazuh SIEM متكاملة تعمل على مدار الساعة وتستقبل سجلات المنظومة',
+      'حزمة قواعد رصد مخصصة (Custom Wazuh XML Rules File) لهجمات الـ OT',
+      'لوحة تحكم أمنية تفاعلية (SOC & Threat Intelligence Dashboard)',
+      'كتيب إجراءات الاستجابة للحوادث الأمنية (Incident Response Playbook)'
     ],
-    tools: ['Wazuh Manager / Indexer / Dashboard', 'Kibana / Elasticsearch', 'Custom XML Rules', 'Syslog'],
+    tools: ['Wazuh SIEM', 'Kibana / OpenSearch', 'rsyslog', 'XML Regex Decoders', 'Linux Sysadmin', 'MITRE ATT&CK'],
     searchKeywords: [
-      'Wazuh SIEM step by step installation on Ubuntu 22.04',
-      'Writing custom Wazuh detection rules XML examples',
-      'Integrating Cowrie honeypot logs with Wazuh SIEM',
-      'Building custom dashboards in Wazuh Kibana for security alerts',
-      'SOC Analyst Incident Response Playbook template and tutorial'
+      'Install Wazuh SIEM all in one ubuntu step by step',
+      'Wazuh custom rules and decoders XML tutorial',
+      'Wazuh syslog input pfSense cisco configuration',
+      'SOC analyst incident response playbook template',
+      'Wazuh dashboard custom visualization tutorial'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: نشر وإعداد Wazuh SIEM',
-        desc: 'تثبيت Wazuh Manager و Indexer و Dashboard وتجهيز البنية التحتية لاستقبال السجلات وتخزينها.'
+        phase: 'المرحلة 1: نشر وتثبيت منصة Wazuh SIEM',
+        desc: 'تثبيت الخادم والمفهرس ولوحة التحكم وتأمين الاتصال والشهادات الرقمية وضبط إعدادات الشبكة.'
       },
       {
-        phase: 'المرحلة 2: توزيع وتثبيت عملاء Wazuh Agents',
-        desc: 'نشر الـ Agents على الخوادم وكتابة قواعد XML مخصصة لاكتشاف هجمات المصائد والتلاعب بالحساسات.'
+        phase: 'المرحلة 2: ربط مصادر السجلات ونشر الـ Agents',
+        desc: 'تثبيت عملاء Wazuh على الخوادم واستقبال سجلات Syslog من جدار الحماية pfSense وسويتش Cisco.'
       },
       {
-        phase: 'المرحلة 3: ربط السجلات وتصميم الداشبورد الأمني',
-        desc: 'ربط وتجميع السجلات من pfSense والمصائد والـ AI وبناء لوحة داشبورد أمنية في Kibana.'
+        phase: 'المرحلة 3: هندسة قواعد الكشف المخصصة (Custom XML Rules)',
+        desc: 'كتابة قواعد دقيقة تلتقط محاولات التلاعب الصناعي وهجمات الـ Brute-force وتصنيفها في مصفوفة MITRE ATT&CK.'
       },
       {
-        phase: 'المرحلة 4: تدريبات الاستجابة للحوادث (Incident Response)',
-        desc: 'إجراء تدريبات الاستجابة للحوادث أثناء هجمات الريد تيم وتطبيق خطوات التحقيق والعزل.'
+        phase: 'المرحلة 4: تجهيز الداشبورد وكتيبات الاستجابة للحادث',
+        desc: 'تصميم لوحة المراقبة لفرز التنبيهات لايف وكتابة خطوات الاحتواء وإعداد تقارير الحوادث الجنائية للمناقشة.'
       }
     ],
     connectionsWith: [
-      { name: 'عمار ياسر', detail: 'تثبيت Wazuh على سحابة AWS واستقبال سجلات مصفوفة المصائد المخادعة وتحليلها' },
-      { name: 'محمد إمبابي', detail: 'استقبال سجلات الـ Syslogs القادمة عبر نفق الـ VPN من المعمل' },
-      { name: 'شهد أحمد', detail: 'استقبال تنبيهات وتفاصيل حزم Suricata IDS/IPS لدمجها في التحليل الأمني' },
-      { name: 'محمود سلمان', detail: 'عرض تنبيهات الـ AI والتحقق من رصد هجمات الريد تيم لايف' }
+      { name: 'شهد أحمد', detail: 'استقبال سجلات جدار الحماية pfSense وإنذارات Suricata عبر Syslog لتحليلها فورياً' },
+      { name: 'عمار ياسر', detail: 'استقبال سجلات مصائد العسل (Cowrie و Conpot) لتحليل تكتيكات المهاجمين ومحاولات الاختراق' },
+      { name: 'محمود سلمان', detail: 'استقبال تنبيهات الذكاء الاصطناعي (AI Anomaly Alerts) وتوثيق هجمات الريد تيم في تقرير السوك' },
+      { name: 'محمد إمبابي', detail: 'استقبال سجلات سويتش Cisco وتحليل ترافيك بورت الـ SPAN المنسوخ' }
     ]
   },
   {
     id: 'ammar-yasser',
     name: 'عمار ياسر السيد عبدالله',
-    role: 'Cloud Security & Deception Architect',
+    role: 'Cloud Security & Deception Grid Architect',
     category: 'Cybersecurity & SOC',
-    color: '#a855f7',
-    badge: 'Cloud & Deception Grid',
-    avatar: '👨‍💻',
-    summary: 'مسؤول عن تأمين وإدارة البنية التحتية السحابية على AWS، وبناء شبكة المصائد المخادعة (Cowrie, Dionaea, Conpot SCADA)، واستخراج استخبارات التهديدات (Threat Intelligence).',
-    detailedMission: 'تأمين البنية التحتية السحابية لمشروع CyberForge على سحابة AWS وتجهيز بيئات الاستضافة الآمنة، وبناء مصفوفة خداع سيبراني متقدمة (Deception Grid) تشتت انتباه المهاجمين وتستدرجهم بعيداً عن أصول المصنع الحقيقية لجمع بصماتهم وسلوكياتهم.',
-    whyThisRoleMatters: 'تقنيات الخداع (Deception Technology) تعد من أحدث وأقوى استراتيجيات الأمن السيبراني؛ فالمصيدة لا تحتوي على أي مستخدمين شرعيين، مما يعني أن أي اتصال يدخل إليها هو تهديد بنسبة 100% (Zero False Positives). تأمين السحابة يضمن أيضاً عدم اختراق خوادم الـ SIEM والـ Backend.',
-    howItIsImplemented: '1. بناء وتأمين AWS VPC مع تقسيمها لـ Public و Private Subnets وضبط Security Groups صارمة تعتمد على مبدأ Least Privilege.\n2. نشر مصفوفة مصائد العسل في حاويات Docker:\n   - **Cowrie:** لمحاكاة سيرفر SSH/Telnet وتسجيل كل أمر وملف ينزله المهاجم.\n   - **Dionaea:** لمحاكاة ثغرات SMB و HTTP وسحب عينات البرمجيات الخبيثة.\n   - **Conpot:** لمحاكاة نظام SCADA صناعي حقيقي (Modbus/S7) لخداع مهاجمي المصانع! ⭐\n3. وضع ملفات فخاخ سرية (Honeyfiles & Canary Tokens) مثل `scada_passwords.txt` تطلق إنذاراً فورياً عند قراءتها.\n4. بناء خط معالجة واستخراج استخبارات التهديدات (Threat Intel Pipeline) وتمرير السجلات لمنصة Wazuh.',
+    color: '#f59e0b',
+    badge: 'Cloud / AWS / Honeypots / Threat Intel',
+    avatar: '☁️',
+    summary: 'مسؤول عن هندسة وتأمين سحابة AWS VPC، نشر مصفوفة المصائد الخداعية (Cowrie SSH و Conpot SCADA)، زرع ملفات الـ Honeyfiles، واستخراج استخبارات التهديدات (Threat Intel).',
+    detailedMission: 'تصميم وتأمين البنية السحابية وشبكات الخداع السيبراني؛ بناء شبكة افتراضية خاصة (AWS VPC) مؤمنة بمجموعات الأمان وقواعد الـ IAM، نشر مصفوفة مصائد العسل الخداعية (Honeynet Grid) التي تحاكي خوادم SSH صناعية (Cowrie) ومحطات تحكم SCADA مزيفة (Conpot) لاستدراج المهاجمين واستنزاف وقتهم، وزرع ملفات مفخخة (Honeyfiles/Canary Tokens) تكشف أي تجسس، واستخراج تقارير استخبارات التهديدات (Threat Intelligence).',
+    whyThisRoleMatters: 'المصائد الخداعية هي السلاح السري لاكتشاف المهاجمين الأذكياء قبل وصولهم للأنظمة الحقيقية. المهاجم الذي يظن أنه يتحكم في محطة توليد طاقة يجد نفسه محبوساً داخل مصيدة Conpot تراقب كل حركة يقوم بها وتسجل عنوان الـ IP وتقنياته دون إلحاق أي ضرر بالمعمل.',
+    howItIsImplemented: '1. بناء وتأمين بنية AWS السحابية (VPC, Subnets, Internet Gateway, Security Groups) مع تطبيق مبدأ الصلاحيات الأقل (Least Privilege IAM).\n2. نشر مصيدة Cowrie التفاعلية داخل حاوية Docker لمحاكاة سيرفر SSH/Telnet مفتوح وتسجيل كل الأوامر التي يكتبها المهاجم.\n3. نشر وتكوين مصيدة Conpot المتخصصة في محاكاة بروتوكولات الـ SCADA الصناعية (Modbus, S7comm, BACnet) لتبدو كأنها محطة كهرباء حقيقية.\n4. زرع ملفات Honeyfiles و Canary Tokens وهمية (مثل ملفات passwords.txt أو plc_config.bak) ترسل تنبيهاً سرياً فور فتحها.\n5. كتابة سكربتات تسحب سجلات المصائد تلقائياً وتحللها لاستخراج مؤشرات الاختراق (IoCs) وإرسالها لمنصة Wazuh SIEM.',
     practicalLabSteps: [
-      'إنشاء حساب AWS وضبط إعدادات الـ IAM و MFA وإنشاء VPC مخصصة للمشروع.',
-      'تثبيت Docker و Docker-Compose على سيرفر Ubuntu سحابي.',
-      'تشغيل حاويات Cowrie و Conpot وضبط ملفات التكوين لتغيير بصمة السيرفرات الوهمية لتطابق مصنعاً حقيقياً.',
-      'زرع ملفات Canary Tokens واختبار إطلاق الإنذارات عند فتحها.',
-      'ربط مخرجات المصائد بـ Wazuh وتجهيز تقرير دوري لاستخبارات التهديدات.'
+      'إنشاء حساب AWS وإعداد شبكة VPC مخصصة مع Security Groups صارمة تعزل المصائد عن الخدمات الحقيقية.',
+      'تشغيل حاويات Docker لمصيدة Cowrie SSH ومصيدة Conpot SCADA والتأكد من فتح المنافذ الخداعية.',
+      'ربط نهاية نفق WireGuard VPN السحابي القادم من معمل محمود أشرف.',
+      'زرع Canary Tokens في ملفات ومسارات النظام واختبار وصول الإشعار الفوري عند محاولة قراءتها.',
+      'تكوين تمرير سجلات المصائد إلى Wazuh لتظهر كل ضغطة زر ينفذها المخترق على لوحة السوك.',
+      'إعداد تقرير Threat Intelligence موثق بهجمات حقيقية تم استدراجها إلى المصائد لعرضه أمام الدكاترة.'
     ],
     deliverables: [
-      'بيئة AWS VPC مؤمنة بأعلى معايير الحماية والـ Least Privilege',
-      'مصفوفة مصائد مخادعة متكاملة (Cowrie SSH + Dionaea + Conpot SCADA)',
-      'ملفات فخاخ سرية (Honeyfiles & Canary Tokens) داخل الخوادم',
-      'تقرير واستخبارات التهديدات (Threat Intelligence Feed & Reports)'
+      'بنية سحابية مؤمنة على AWS VPC مع جدران حماية ومجموعات أمان مشددة',
+      'مصفوفة مصائد العسل الخداعية العاملة لايف (Cowrie SSH + Conpot SCADA Honeypots)',
+      'منظومة الملفات المفخخة والتنبيه المبكر (Honeyfiles & Canary Tokens Architecture)',
+      'تقرير استخبارات التهديدات وتحليل سلوك المهاجمين (Threat Intelligence Report)'
     ],
-    tools: ['AWS VPC / EC2 / S3 / IAM', 'Conpot (SCADA Honeypot)', 'Cowrie', 'Dionaea', 'Docker', 'Canary Tokens'],
+    tools: ['AWS (VPC/EC2/IAM)', 'Docker & Docker-Compose', 'Cowrie Honeypot', 'Conpot SCADA', 'Canary Tokens', 'Terraform (اختياري)'],
     searchKeywords: [
-      'AWS VPC Security Group best practices for security projects',
-      'How to deploy Conpot SCADA honeypot docker step by step',
-      'Cowrie SSH Honeypot setup and log integration',
-      'Setting up Honeyfiles canary tokens for intrusion detection',
-      'Building a Threat Intelligence feed from honeypot data'
+      'AWS VPC security best practices architecture tutorial',
+      'Cowrie SSH honeypot docker installation guide',
+      'Conpot industrial SCADA honeypot setup modbus',
+      'Canarytokens honeyfiles detection and alerting tutorial',
+      'Extracting threat intelligence from honeypot logs python'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: بناء وتأمين سحابة AWS (Cloud Hardening)',
-        desc: 'إنشاء VPC مخصصة، ضبط الـ Subnets، وتطبيق مبدأ Least Privilege على صلاحيات الـ IAM.'
+        phase: 'المرحلة 1: بناء وتأمين سحابة AWS VPC',
+        desc: 'تصميم البنية السحابية وشبكات الـ Subnets وتطبيق سياسات IAM المشددة وجدران الحماية Security Groups.'
       },
       {
-        phase: 'المرحلة 2: نشر مصفوفة المصائد المخادعة (Deception Grid)',
-        desc: 'نشر مصفوفة المصائد المخادعة (Cowrie SSH, Dionaea, Conpot SCADA) في حاويات Docker.'
+        phase: 'المرحلة 2: نشر مصفوفة المصائد (Cowrie & Conpot)',
+        desc: 'تشغيل مصائد الـ SSH والـ SCADA الصناعية بحاويات Docker لتبدو للغرباء كأنها أنظمة مصنع حقيقية جاهزة للاختراق.'
       },
       {
-        phase: 'المرحلة 3: زرع الفخاخ وربط السجلات (Honeyfiles & SIEM)',
-        desc: 'زرع ملفات فخاخ حساسة (Honeyfiles) وربط سجلات المصائد بمنصة Wazuh.'
+        phase: 'المرحلة 3: زرع الملفات المفخخة وربط السجلات',
+        desc: 'توزيع الـ Honeyfiles التي تكشف أي تسلل داخلي وتمرير كافة سجلات المصائد إلى Wazuh SIEM عبر النفق المشفر.'
       },
       {
-        phase: 'المرحلة 4: استخراج استخبارات التهديدات (Threat Intelligence)',
-        desc: 'استخراج عناوين المهاجمين والـ Hashes والكلمات المستخدمة وتوليد تقارير Threat Intel متجددة.'
+        phase: 'المرحلة 4: استخراج Threat Intel والتوثيق الأكاديمي',
+        desc: 'تحليل سلوك المهاجمين المستدرجين وتوليد تقرير استخبارات التهديدات الشامل لكتاب التخرج.'
       }
     ],
     connectionsWith: [
-      { name: 'شامل شاهين', detail: 'توفير البنية السحابية للـ SIEM وتمرير سجلات المصائد لـ Wazuh وتجميع الـ IoCs' },
-      { name: 'محمد إمبابي', detail: 'استقبال نفق WireGuard VPN القادم من شبكة المعمل إلى AWS وتأمينه' },
-      { name: 'محمود سلمان', detail: 'استضافة خوادم الـ API والـ AI وتجربة استدراج هجمات الريد تيم لايف' },
-      { name: 'رقيه وسام', detail: 'التنسيق بين المصائد السحابية والمصائد المحلية على VLAN 20 بالسويتش' }
+      { name: 'محمود أشرف', detail: 'استقبال طرف نفق WireGuard VPN القادم من المعمل وربط السحابة بالبنية المحلية' },
+      { name: 'شامل شاهين', detail: 'تغذية منصة Wazuh SIEM بسجلات هجمات المصائد الخداعية لتصنيفها في مصفوفة ATT&CK' },
+      { name: 'محمود سلمان', detail: 'استضافة خادم الـ Backend ونماذج الـ AI على سيرفرات AWS وتجربة الهجمات على المصائد' },
+      { name: 'شهد أحمد', detail: 'التنسيق مع قواعد الفايروول لضمان حبس المهاجم داخل المصيدة ومنعه من الخروج منها' }
     ]
   },
   {
     id: 'marwan-ashraf',
     name: 'مروان أشرف جوده إبراهيم',
-    role: 'Hardware & Embedded Systems Engineer',
+    role: 'Hardware & Robotics Systems Engineer',
     category: 'Hardware & Embedded',
-    color: '#10b981',
-    badge: 'Embedded & Rover & SCADA',
-    avatar: '👨‍💻',
-    summary: 'مسؤول عن تجميع وبرمجة عربة الفحص (Cyber-Rover)، بناء محطات المصنع الأربعة بـ 4 بوردات ESP32 بالحساسات والمشغلات ومفاتيح العزل (Relay Kill-Switches)، وتجهيز المجسم الفيزيائي.',
-    detailedMission: 'تحويل المفاهيم البرمجية إلى واقع ملموس عبر بناء محطات المصنع الفيزيائية الأربعة وتزويدها بالحساسات والمشغلات، وبرمجة نظام الفصل الميكانيكي الفوري (Physical Kill-Switch)، وتجميع عربة الفحص الذكية (Cyber-Rover) وبرمجة حركتها اللاسلكية وتفادي العوائق.',
-    whyThisRoleMatters: 'مشروع CyberForge يتميز عن بقية المشاريع الأكاديمية بوجود الكيان الفيزيائي الحقيقي (Hardware in the Loop). بدون الـ ESP32 والحساسات والريلاي، لن يكون هناك فصل فيزيائي للتيار، وبدون الـ Rover لن يكون هناك فحص أوتوماتيكي متنقل في المصنع.',
-    howItIsImplemented: '1. برمجة 4 بوردات ESP32 باستخدام Arduino IDE لقراءة حساسات الحرارة (DHT22)، والتيار (ACS712)، والحركة (PIR)، وتدفق المياه، ونشر البيانات عبر MQTT كل ثانية.\n2. توصيل وحدات الـ Relay Modules كمفاتيح أمان فيزيائية تفصل الطاقة عن المحركات والمضخات فور استلام أمر `isolate` وتغيير إضاءة LED إلى الأحمر.\n3. تجميع عربة الـ Cyber-Rover بشاسيه 4WD ودرايفر موتور L298N، وحساسات ألتراسونيك HC-SR04 لتفادي الاصطدام، وتوصيل Raspberry Pi وبطارية Power Bank مع كارت وايفاي Monitor Mode.\n4. كتابة كود Python على الـ Rover للتحكم في الحركة، وإجراء فحص دوري لاسلكي بـ Nmap، وإرسال النتائج عبر REST API، مع ميزة العودة التلقائية للقاعدة (Safe-Return-to-Base) عند الطوارئ.\n5. تصميم وبناء مجسم مصنع مصغر بألواح أكريليك/خشب مضيء لترتيب المحطات والأسلاك بشكل مبهر للمناقشة.',
+    color: '#ef4444',
+    badge: 'Hardware / Robotics / ESP32 / Relays',
+    avatar: '🤖',
+    summary: 'مسؤول عن بناء وبرمجة عربة Cyber-Rover اللاسلكية الذاتية، تصميم محطات الـ ESP32 الأربعة وحساساتها، مفاتيح العزل الفيزيائي (Relay Kill-Switches)، والمجسم النهائي المضيء.',
+    detailedMission: 'تجسيد المنظومة في العالم الفيزيائي الملموس؛ بناء وبرمجة عربة Cyber-Rover الذكية ذات الدفع الرباعي وتزويدها بنظام تفادي العقبات بالموجات فوق الصوتية والمسح اللاسلكي للشبكة والتحكم اليدوي، تصميم وتجميع محطات التحكم الصناعية الأربعة باستخدام بوردات ESP32 وحساسات الحرارة والتيار والغاز، ودمج مفاتيح الـ Relay Kill-Switches الفيزيائية التي تفصل الطاقة ميكانيكياً في 20 جزء من الثانية فور تلقي أمر الطوارئ، وتجهيز مجسم المصنع التفاعلي الأكريليك بالكامل ليكون النجم المضيء يوم المناقشة.',
+    whyThisRoleMatters: 'بدون عتاد هاردوير حقيقي، سيظل المشروع مجرد شاشات وأكواد افتراضية. وجود مجسم فيزيائي تفاعلي، عربة تتحرك على الأرض، حساسات حقيقية تقرأ لهب أو حرارة، ومفتاح Relay يفصل الكهرباء بصوت "تك" ميكانيكي ملموس وتولع اللمبة الحمراء.. هو ما يمنح المشروع الدرجة النهائية ويبهر لجنة التحكيم.',
+    howItIsImplemented: '1. تجميع شاسيه عربة الـ 4WD وتركيب محركات DC ودائرة L298N للتحكم في الحركة وتغذيتها ببطاريات الليثيوم مع شاحن BMS للحماية.\n2. برمجة عقل الـ Rover (ESP32 / Raspberry Pi) بكود C++ / Python يشمل نظام تفادي الحواجز بالموجات فوق الصوتية (Ultrasonic Sensor) وربطه بوايفاي المعمل على VLAN 30 لتلقي أوامر التحكم اليدوي وتفعيل مناورة العودة الذاتية للقاعدة (Safe-Return).\n3. تجميع وبرمجة محطات الـ ESP32 الأربعة وتوصيل حساسات الحرارة والرطوبة (DHT22) والتيار (ACS712) والغاز (MQ-2) ونشر قراءاتها عبر بروتوكول MQTT.\n4. توصيل دوائر الـ Relays ومصابيح الـ LEDs (أخضر/أصفر/أحمر) وبرمجة وظيفة الـ Physical Kill-Switch التي تقطع الدائرة فورياً في أقل من 20 ملي ثانية.\n5. تصميم وبناء هيكل المصنع من الأكريليك والخشب مع تثبيت الكابلات وعلب الحماية وإضاءات النيون لإعطاء مظهر صناعي عسكري مبهر.',
     practicalLabSteps: [
-      'شراء وفحص قطع الهاردوير والتأكد من سلامة دبابيس بوردات ESP32.',
-      'توصيل كل محطة على Breadboard واختبار قراءة الحساسات وإرسالها عبر Wi-Fi لـ Mosquitto Broker.',
-      'اختبار دائرة الـ Relay والتأكد من فصل الحمل الكهربائي في أقل من 20ms عند إرسال أمر العزل.',
-      'تجميع شاسيه الـ Rover اللاسلكي وتجربة السير الذاتي وتفادي العوائق بالألتراسونيك.',
-      'تثبيت المحطات والأسلاك والإضاءات داخل المجسم النهائي وضبط مسار دورية الـ Rover.'
+      'تجهيز وفحص المكونات الإلكترونية واختبار بوردات ESP32 والحساسات على لوحة التجارب (Breadboard).',
+      'تجميع شاسيه الروبوت واختبار دوائر التغذية وتنظيم الجهد ومحركات الحركة.',
+      'كتابة كود Arduino C++ لربط الـ ESP32 بشبكة الوايفاي ونشر قراءات الحساسات على Mosquitto MQTT.',
+      'توصيل واختبار استجابة مفتاح الـ Relay الميكانيكي وقياس سرعة الفصل الفيزيائي للدائرة.',
+      'برمجة نظام الملاحة الذاتية وتفادي العقبات لعربة الـ Rover وربطها بسيرفر التحكم المركزي.',
+      'تركيب المجسم النهائي في صندوق الأكريليك وتثبيت إضاءات الحالة واللافتات التحذيرية للمناقشة.'
     ],
     deliverables: [
-      'عربة Cyber-Rover لاسلكية ذاتية الحركة تفحص الشبكة وتتجنب العوائق وتدعم العودة للقاعدة',
-      '4 محطات صناعية فيزيائية ESP32 (تبريد، أفران، طاقة كهربائية، وأمان)',
-      'نظام الفصل الفيزيائي الميكانيكي (Relay Kill-Switches) ولمبات البيان الملونة',
-      'المجسم الفيزيائي المضيء للمصنع لعرضه وتشغيله يوم المناقشة'
+      'عربة Cyber-Rover اللاسلكية ذاتية الحركة ومزودة بآلية الملاحة وتفادي العقبات والتحكم اليدوي',
+      'محطات المصنع الصناعية الأربعة العاملة ببوردات ESP32 والمربوطة بالحساسات الحقيقية',
+      'منظومة مفاتيح العزل الفيزيائي السريع (Hardware Relay Kill-Switch Circuit)',
+      'مجسم المصنع الذكي الفيزيائي التفاعلي المكتمل (Acrylic Demo Model) المضيء'
     ],
-    tools: ['ESP32', 'Raspberry Pi / Laptop', 'Arduino IDE / PlatformIO', 'Relay Modules', 'Ultrasonic HC-SR04', '4WD Chassis', 'Python'],
+    tools: ['ESP32 NodeMCU', 'Raspberry Pi', 'Arduino IDE & C++', 'L298N Motor Driver', 'Relay Modules', 'Sensors (DHT22, ACS712, MQ-2)', 'Soldering & Electronics Tools'],
     searchKeywords: [
-      'ESP32 MQTT Publish Sensor Data Arduino IDE tutorial',
-      'ESP32 Relay Module emergency kill switch control',
-      'Build 4WD Robot Car with Raspberry Pi and L298N Python',
-      'Raspberry Pi automated network scanner with Nmap and python-nmap',
-      'Interactive industrial IoT factory demo model layout ideas'
+      'ESP32 MQTT sensor publishing Arduino C++ tutorial',
+      'Arduino 4WD robot obstacle avoidance ultrasonic sensor code',
+      'ESP32 relay module kill switch instant response',
+      'ESP32 web server manual motor control joystick',
+      'Building smart factory miniature model for engineering project'
     ],
     roadmapPhases: [
       {
-        phase: 'المرحلة 1: برمجة المحطات الأربعة (4 ESP32 Stations)',
-        desc: 'قراءة حساسات الحرارة والتيار والتدفق والحركة، وإرسال البيانات دورياً عبر بروتوكول MQTT.'
+        phase: 'المرحلة 1: برمجة واختبار حساسات ومحطات الـ ESP32',
+        desc: 'قراءة إشارات الحساسات وبرمجة إرسالها دورياً عبر MQTT والتحكم في إضاءات الـ LEDs ثلاثية الألوان.'
       },
       {
-        phase: 'المرحلة 2: برمجة مفاتيح العزل الفيزيائي (Kill-Switch Logic)',
-        desc: 'توصيل الـ Relay لفصل طاقة المحطة في أجزاء من الثانية فور استلام أمر isolate وتحويل LED للأحمر.'
+        phase: 'المرحلة 2: بناء واختبار دوائر العزل الفيزيائي (Relay Kill-Switch)',
+        desc: 'توصيل مفاتيح الـ Relay وضمان استجابتها اللحظية لأوامر الطوارئ لقطع الطاقة فيزيائياً وعزل المعدات.'
       },
       {
-        phase: 'المرحلة 3: تجميع وبرمجة عربة الفحص (Cyber-Rover)',
-        desc: 'تجميع الشاسيه 4WD، وتوصيل الحساسات لتفادي العوائق، وكارت الوايفاي لفحص الشبكة وإرسال التقارير.'
+        phase: 'المرحلة 3: تجميع وبرمجة عربة الـ Cyber-Rover',
+        desc: 'بناء شاسيه الروبوت وبرمجة خوارزميات تفادي العقبات والتحكم اللاسلكي عبر الوايفاي وميزة العودة للقاعدة.'
       },
       {
-        phase: 'المرحلة 4: تصميم وبناء المجسم الفيزيائي للمصنع',
-        desc: 'بناء مجسم مصغر يجمع المحطات الأربعة مع إضاءات وتوصيلات احترافية للعرض يوم المناقشة.'
+        phase: 'المرحلة 4: بناء وتشطيب مجسم المصنع النهائي',
+        desc: 'تصميم هيكل الأكريليك، تنظيم وتثبيت التوصيلات، واختبار العرض التفاعلي الشامل ليوم التخرج.'
       }
     ],
     connectionsWith: [
-      { name: 'محمود أشرف', detail: 'إرسال بيانات الحساسات لسيرفر Mosquitto MQTT وضبط قنوات الاتصال والـ Topics' },
-      { name: 'رقيه وسام', detail: 'توصيل البوردات والـ Rover بمنافذ الـ Access المحددة على السويتش في الـ VLANs الصحيحة' },
-      { name: 'محمود سلمان', detail: 'تنفيذ أوامر الـ Kill-Switch القادمة من الـ AI، وإرسال نتائج فحص الـ Rover وعرض حالة المحطات على الداشبورد وتطبيق الموبايل' },
-      { name: 'شامل شاهين', detail: 'إرسال قراءات التنبيهات الفيزيائية والحالات الطارئة للـ SOC' }
+      { name: 'محمود سلمان', detail: 'إرسال بيانات الحساسات الحية لمحرك الـ AI، واستقبال أوامر العزل والتحكم اليدوي في حركة الـ Rover من تطبيق الموبايل والداشبورد' },
+      { name: 'محمود أشرف', detail: 'نشر قراءات الـ ESP32 واستقبال أوامر التحكم عبر خادم Mosquitto MQTT' },
+      { name: 'محمد إمبابي', detail: 'توصيل محطات الـ ESP32 والـ Rover بمنافذ السويتش والـ VLANs المخصصة لها' },
+      { name: 'رقية وسام', detail: 'تزويد رقية ببيانات استطلاع الـ Rover لفحص واكتشاف ثغرات الأجهزة الصناعية والوايفاي' }
     ]
   }
 ];
