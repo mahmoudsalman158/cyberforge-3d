@@ -8,7 +8,7 @@ export default function TeamSection() {
   const [activeModalMember, setActiveModalMember] = useState(null);
   const [copiedQuery, setCopiedQuery] = useState(null);
 
-  const categories = ['All', 'Network', 'Cybersecurity & SOC', 'Hardware & Embedded', 'Software & AI'];
+  const categories = ['All', 'Red Team & Software', 'Network', 'Cybersecurity & SOC', 'Hardware & Embedded'];
 
   const filteredMembers = teamMembers.filter((m) => {
     const matchesCategory = selectedCategory === 'All' || m.category === selectedCategory;

@@ -77,99 +77,131 @@ export const timelineMonths = [
 
 export const memberDetailedRoadmaps = [
   {
-    memberId: 'mahmoud-salman',
-    memberName: 'محمود محمد أحمد عبد ربه سليمان',
+    id: 'mahmoud-salman',
+    name: 'محمود محمد أحمد عبد ربه سليمان',
     role: 'Red Team Operator, Full-Stack Developer & AI Core Architect',
+    color: '#00d4ff',
+    avatar: '👨‍💻',
+    whyLearn: 'لبناء العقل الذكي للمنظومة بالـ AI، ومصفوفة الـ GRC، وواجهات المراقبة، وشن هجمات الـ OT لإثبات كفاءة الدفاع الذاتي.',
+    projectImpact: 'يربط الأجهزة الفيزيائية بالسحابة والداشبورد، ويكشف التلاعب الذكي بالحساسات، ويقود هجمات العرض الحي.',
     months: [
-      { month: 'الشهر 1', focus: 'AI Anomaly Detection Baseline & FastAPI Prototype', output: 'نموذج أولي لكشف الشذوذ وخادم REST API مبدئي' },
-      { month: 'الشهر 2', focus: 'AI-Driven GRC Engine & Realtime WebSockets', output: 'موديول حساب مصفوفة المخاطر والامتثال لمعيار IEC 62443' },
-      { month: 'الشهر 3', focus: 'Interactive 3D Dashboard & Flutter Mobile App', output: 'لوحة تحكم تفاعلية وتطبيق الهاتف بالـ Joystick للتحكم بالـ Rover' },
-      { month: 'الشهر 4', focus: 'Advanced SCADA Red Team Attacks & Stuxnet Simulation', output: 'سكربتات هجومية متقدمة وحقن حزم الـ OT واختبار العزل التلقائي' },
-      { month: 'الشهر 5', focus: 'End-to-End System Integration & Live Demo Rehearsal', output: 'إتقان العرض التفاعلي الحي أمام لجنة التحكيم' }
+      { m: 'شهر 1', focus: 'AI Anomaly Detection Baseline & FastAPI Prototype', detail: 'تجهيز بيئة Python وتدريب نموذج أولي على بيانات الحساسات وبناء خادم FastAPI.' },
+      { m: 'شهر 2', focus: 'AI-Driven GRC Engine & Realtime WebSockets', detail: 'برمجة موديول حساب مصفوفة المخاطر والامتثال لمعايير IEC 62443 وبث التنبيهات لايف.' },
+      { m: 'شهر 3', focus: 'Interactive 3D Dashboard & Flutter Mobile App', detail: 'بناء لوحة تحكم الويب وتطبيق الموبايل بالـ Joystick للتحكم بالـ Rover في الطوارئ.' },
+      { m: 'شهر 4', focus: 'Advanced SCADA Red Team Attacks & Stuxnet Simulation', detail: 'تنفيذ هجمات التلاعب الصناعي وحقن الحزم واختبار رد فعل العزل التلقائي.' },
+      { m: 'شهر 5', focus: 'End-to-End System Integration & Live Demo Rehearsal', detail: 'الربط النهائي الشامل والبروفة المتكاملة للعرض أمام لجنة التحكيم.' }
     ]
   },
   {
-    memberId: 'roqaya-wesam',
-    memberName: 'رقيه وسام محمد علي',
+    id: 'roqaya-wesam',
+    name: 'رقيه وسام محمد علي',
     role: 'Red Team Analyst & Security Testing Specialist',
+    color: '#ec4899',
+    avatar: '👩‍💻',
+    whyLearn: 'لاكتساب مهارات الفحص والاستطلاع العملي واختبار اختراق تطبيقات الويب والـ APIs والشبكات وإعداد التقارير الرسمية.',
+    projectImpact: 'تضمن خلو واجهات المنظومة وخادم الـ APIs وشبكة الـ Rover من الثغرات الأمنية وتوثق مسارات الهجوم لكتاب التخرج.',
     months: [
-      { month: 'الشهر 1', focus: 'Kali Linux Setup & TryHackMe Pre-Security Path', output: 'تجهيز بيئة العمل وإتقان أوامر الاستطلاع والفحص الشبكي' },
-      { month: 'الشهر 2', focus: 'TryHackMe Jr Penetration Tester & Burp Suite Lab', output: 'فهم واختبار ثغرات OWASP Top 10 واعتراض حزم الـ HTTP/APIs' },
-      { month: 'الشهر 3', focus: 'Web Dashboard & REST API Security Assessment', output: 'فحص واختراق واجهات المنظومة والـ APIs وتسليم تقرير الثغرات لسلمان' },
-      { month: 'الشهر 4', focus: 'Wireless Wi-Fi Auditing & Network Vulnerability Scan', output: 'فحص تشفير شبكة المعمل والـ Rover واكتشاف الـ Rogue APs' },
-      { month: 'الشهر 5', focus: 'Official Penetration Testing Report & Presentation', output: 'تسليم تقرير الـ Pentest الرسمي المتكامل لكتاب المشروع' }
+      { m: 'شهر 1', focus: 'Kali Linux Setup & TryHackMe Pre-Security Path', detail: 'تجهيز بيئة Kali Linux وإتقان أدوات الاستطلاع الشبكي Nmap وفهم منافذ الخدمات.' },
+      { m: 'شهر 2', focus: 'TryHackMe Jr Penetration Tester & Burp Suite Lab', detail: 'إنجاز لابات الـ Jr Pentester وفهم ثغرات OWASP Top 10 واعتراض حزم الـ HTTP.' },
+      { m: 'شهر 3', focus: 'Web Dashboard & REST API Security Assessment', detail: 'فحص واختراق لوحة تحكم الويب والـ APIs واكتشاف ثغرات الـ Injection وتجاوز الصلاحيات.' },
+      { m: 'شهر 4', focus: 'Wireless Wi-Fi Auditing & Network Vulnerability Scan', detail: 'فحص تشفير شبكة الـ Rover والوايفاي واكتشاف الثغرات وتجربة استغلالها مع سلمان.' },
+      { m: 'شهر 5', focus: 'Official Penetration Testing Report & Presentation', detail: 'صياغة تقرير اختبار الاختراق الرسمي المكتمل وتجهيز استعراض النتائج للمناقشة.' }
     ]
   },
   {
-    memberId: 'mohamed-embaby',
-    memberName: 'محمد أشرف محمد إمبابي',
+    id: 'mohamed-embaby',
+    name: 'محمد أشرف محمد إمبابي',
     role: 'Network Infrastructure & Switching Architect',
+    color: '#06b6d4',
+    avatar: '👨‍💼',
+    whyLearn: 'لتأسيس البنية التحتية الفيزيائية للشبكة، عزل الـ VLANs، وتأمين منافذ السويتش ضد المتطفلين.',
+    projectImpact: 'يوفر شبكة صناعية مجزأة ومحمية تمنع التحرك العرضي للمهاجم وتبث ترافيك المحطات لأجهزة السوك.',
     months: [
-      { month: 'الشهر 1', focus: 'Cisco 2960 Switch Initialization & 5 VLANs Setup', output: 'ضبط السويتش الأساسي وعزل الشبكات الخمسة المعملية' },
-      { month: 'الشهر 2', focus: '802.1Q Trunking & Port Security Sticky Configuration', output: 'ربط الـ Trunk بالفايروول وتفعيل حماية المنافذ ضد المتطفلين' },
-      { month: 'الشهر 3', focus: 'SPAN Port Mirroring & Physical Cabling Architecture', output: 'بث ترافيك المحطات والمصائد لأجهزة التحليل وتوثيق المخطط' },
-      { month: 'الشهر 4', focus: 'Network Stress Testing & Port Violation Simulation', output: 'اختبار حظر الأجهزة الغريبة والتأكد من استقرار الـ VLANs' },
-      { month: 'الشهر 5', focus: 'Physical Network Final Audit & Graduation Documentation', output: 'تقرير تدقيق البنية التحتية والمخطط الفيزيائي النهائي' }
+      { m: 'شهر 1', focus: 'Cisco 2960 Switch Initialization & 5 VLANs Setup', detail: 'توصيل كابل الـ Console وبرمجة الـ 5 VLANs المعزولة على سويتش Cisco 2960.' },
+      { m: 'شهر 2', focus: '802.1Q Trunking & Port Security Sticky Configuration', detail: 'ربط خط الـ Trunk بالفايروول وتفعيل Port Security لغلق المنفذ عند توصيل جهاز غريب.' },
+      { m: 'شهر 3', focus: 'SPAN Port Mirroring & Physical Cabling Architecture', detail: 'تفعيل بورت الـ SPAN لنسخ ترافيك المحطات والمصائد وتجهيز خريطة الكابلات.' },
+      { m: 'شهر 4', focus: 'Network Stress Testing & Port Violation Simulation', detail: 'محاكاة اختراق فيزيائي وتوصيل أجهزة غريبة والتأكد من إغلاق المنافذ وعزل الشبكات.' },
+      { m: 'شهر 5', focus: 'Physical Network Final Audit & Graduation Documentation', detail: 'المراجعة النهائية لاستقرار السويتش وتوثيق المخطط الفيزيائي في كتاب المشروع.' }
     ]
   },
   {
-    memberId: 'mahmoud-ashraf',
-    memberName: 'محمود أشرف السيد عبداللطيف',
+    id: 'mahmoud-ashraf',
+    name: 'محمود أشرف السيد عبداللطيف',
     role: 'OT Protocols, VPN & Simulation Architect',
+    color: '#3b82f6',
+    avatar: '👨‍🔧',
+    whyLearn: 'لهندسة وتأمين قنوات الاتصال الصناعي (MQTT و Modbus) والربط المشفر بالسحابة بـ WireGuard VPN والمحاكاة الموسعة.',
+    projectImpact: 'يضمن نقل بيانات الحساسات المشفرة بأقل تأخير بين المعمل والسحابة ويوضح إمكانية تطبيق المشروع على كبرى المصانع.',
     months: [
-      { month: 'الشهر 1', focus: 'Mosquitto MQTT Setup & Modbus TCP Protocol Lab', output: 'خادم MQTT شغال ومحاكي بروتوكول Modbus TCP الصناعي' },
-      { month: 'الشهر 2', focus: 'WireGuard Site-to-Site VPN Tunnel pfSense to AWS', output: 'نفق مشفر فائق السرعة يربط المعمل بسحابة AWS' },
-      { month: 'الشهر 3', focus: 'MQTT Authentication & Inter-VLAN Routing Integration', output: 'تأمين قنوات الـ MQTT بكلمات سر والتأكد من عبورها عبر الـ VPN' },
-      { month: 'الشهر 4', focus: 'EVE-NG Industrial SCADA Network Topology Simulation', output: 'توبولوجي افتراضي لمصنع ضخم يثبت قابلية المنظومة للتوسع' },
-      { month: 'الشهر 5', focus: 'Network Protocols Stability Audit & Final Defense Demo', output: 'جاهزية بروتوكولات المصنع ونفق الـ VPN للمناقشة' }
+      { m: 'شهر 1', focus: 'Mosquitto MQTT Setup & Modbus TCP Protocol Lab', detail: 'تثبيت خادم Mosquitto MQTT وضبط الـ Topics وبرمجة محاكي Modbus TCP الصناعي.' },
+      { m: 'شهر 2', focus: 'WireGuard Site-to-Site VPN Tunnel pfSense to AWS', detail: 'توليد مفاتيح WireGuard وبناء نفق مشفر فائق السرعة يربط المعمل بسحابة AWS EC2.' },
+      { m: 'شهر 3', focus: 'MQTT Authentication & Inter-VLAN Routing Integration', detail: 'تأمين وسيط الـ MQTT بالمصادقة وكلمات المرور والتأكد من استقرار نقل البيانات عبر الـ VPN.' },
+      { m: 'شهر 4', focus: 'EVE-NG Industrial SCADA Network Topology Simulation', detail: 'بناء شبكة مصنع ضخم افتراضية على EVE-NG وإثبات قدرة النظام على استيعاب آلاف الأجهزة.' },
+      { m: 'شهر 5', focus: 'Network Protocols Stability Audit & Final Defense Demo', detail: 'التدقيق النهائي لاستقرار الاتصالات والبروتوكولات وجاهزية نفق الـ VPN للمناقشة.' }
     ]
   },
   {
-    memberId: 'shahd-ahmed',
-    memberName: 'شهد أحمد جوده محمد',
+    id: 'shahd-ahmed',
+    name: 'شهد أحمد جوده محمد',
     role: 'Firewall & Network Security Specialist',
+    color: '#10b981',
+    avatar: '👩‍💼',
+    whyLearn: 'لحماية حدود المنظومة وتطبيق قواعد الـ ACLs الصارمة وكشف التسلل بـ Suricata والعزل التلقائي.',
+    projectImpact: 'تمنع أي ترافيك غير مصرح به بين الشبكات وتعزل أي جهاز مشبوه فورياً في VLAN 50 بنقرة زر أو أمر AI.',
     months: [
-      { month: 'الشهر 1', focus: 'pfSense Firewall Hardware Setup & Interface Mapping', output: 'تثبيت نظام pfSense واستقبال كابل الـ Trunk وضبط الواجهات' },
-      { month: 'الشهر 2', focus: 'Strict ACL Firewall Rules & Suricata IDS/IPS Deployment', output: 'مصفوفة عزل الـ VLANs وتفعيل الفحص العميق للحزم بـ Suricata' },
-      { month: 'الشهر 3', focus: 'Custom Suricata Rules for OT & Syslog Forwarding to Wazuh', output: 'رصد هجمات الـ Port Scan والـ MQTT Injection وتمرير السجلات' },
-      { month: 'الشهر 4', focus: 'Dynamic Quarantine Automation Engine (VLAN 50 Isolation)', output: 'نقل الأجهزة المخترقة تلقائياً لـ VLAN 50 فور أمر الـ AI' },
-      { month: 'الشهر 5', focus: 'Perimeter Defense Validation & Final Security Dossier', output: 'توثيق كفاءة جدار الحماية وسجل الحظر للمناقشة' }
+      { m: 'شهر 1', focus: 'pfSense Firewall Hardware Setup & Interface Mapping', detail: 'تثبيت نظام pfSense واستقبال الـ Trunk من السويتش وضبط الواجهات الفرعية لكل VLAN.' },
+      { m: 'شهر 2', focus: 'Strict ACL Firewall Rules & Suricata IDS/IPS Deployment', detail: 'كتابة مصفوفة قواعد الحظر والسماح وتثبيت حزمة Suricata وتفعيل وضع الـ Inline IPS.' },
+      { m: 'شهر 3', focus: 'Custom Suricata Rules for OT & Syslog Forwarding to Wazuh', detail: 'كتابة قواعد رصد متخصصة لحزم الـ Nmap وحقن الـ MQTT وتوجيه السجلات لـ Wazuh.' },
+      { m: 'شهر 4', focus: 'Dynamic Quarantine Automation Engine (VLAN 50 Isolation)', detail: 'برمجة سكربت العزل التلقائي لنقل الـ IP المهاجم لـ VLAN 50 في أقل من ثانية.' },
+      { m: 'شهر 5', focus: 'Perimeter Defense Validation & Final Security Dossier', detail: 'اختبار صمود الفايروول وتوثيق سجلات الحظر ومصفوفة الـ ACLs للمناقشة.' }
     ]
   },
   {
-    memberId: 'shamel-shaheen',
-    memberName: 'شامل محمد علي شاهين',
+    id: 'shamel-shaheen',
+    name: 'شامل محمد علي شاهين',
     role: 'SOC Analyst / Blue Team Operations Specialist',
+    color: '#8b5cf6',
+    avatar: '🕵️‍♂️',
+    whyLearn: 'لبناء وتشغيل مركز العمليات الأمنية (SIEM) ورصد الهجمات في لحظة وقوعها وإدارة الاستجابة.',
+    projectImpact: 'يوفر لوحة موحدة تجمع كل سجلات المصنع والمصائد والفايروول وتطلق الإنذارات الفورية.',
     months: [
-      { month: 'الشهر 1', focus: 'Wazuh SIEM All-in-One Deployment & Architecture', output: 'خادم Wazuh يعمل ومفهرس السجلات جاهز' },
-      { month: 'الشهر 2', focus: 'Wazuh Agents Rollout & Syslog Input Pipeline', output: 'استقبال سجلات السويتش والفايروول والخوادم لايف' },
-      { month: 'الشهر 3', focus: 'Custom Decoders & XML Detection Rules Engineering', output: 'قواعد رصد مخصصة تلتقط التلاعب بالحساسات والمصائد' },
-      { month: 'الشهر 4', focus: 'Live Incident Triage & Response Playbook Simulation', output: 'تصنيف التنبيهات واختبار خطوات الاحتواء الأمني' },
-      { month: 'الشهر 5', focus: 'SOC Operations Dashboard & Incident Investigation Dossier', output: 'لوحة مراقبة أمنية متكاملة وتقارير الحوادث الجنائية' }
+      { m: 'شهر 1', focus: 'Wazuh SIEM All-in-One Deployment & Architecture', detail: 'تثبيت Wazuh Manager و Indexer و Dashboard على سيرفر Ubuntu وفهم هيكل القواعد.' },
+      { m: 'شهر 2', focus: 'Wazuh Agents Rollout & Syslog Input Pipeline', detail: 'نشر الـ Agents على الخوادم واستقبال سجلات Syslog من السويتش والفايروول لايف.' },
+      { m: 'شهر 3', focus: 'Custom Decoders & XML Detection Rules Engineering', detail: 'كتابة قواعد وفك تشفير XML مخصصة لاكتشاف التلاعب بحساسات المصنع ومصائد العسل.' },
+      { m: 'شهر 4', focus: 'Live Incident Triage & Response Playbook Simulation', detail: 'إجراء تدريبات الاستجابة للحوادث أثناء هجمات الريد تيم وتطبيق خطوات التحقيق والعزل.' },
+      { m: 'شهر 5', focus: 'SOC Operations Dashboard & Incident Investigation Dossier', detail: 'تصميم لوحة المراقبة التفاعلية وإعداد تقارير الحوادث الجنائية لكتاب التخرج.' }
     ]
   },
   {
-    memberId: 'ammar-yasser',
-    memberName: 'عمار ياسر السيد عبدالله',
+    id: 'ammar-yasser',
+    name: 'عمار ياسر السيد عبدالله',
     role: 'Cloud Security & Deception Grid Architect',
+    color: '#f59e0b',
+    avatar: '☁️',
+    whyLearn: 'لبناء سحابة آمنة ونشر مصفوفة مصائد مخادعة تستدرج المهاجمين وتجمع Threat Intelligence.',
+    projectImpact: 'حماية البنية التحتية على AWS وخداع المهاجمين بمصائد SCADA و SSH واستخراج بصمات التهديدات.',
     months: [
-      { month: 'الشهر 1', focus: 'AWS VPC Architecture & Least-Privilege IAM Policies', output: 'بنية سحابية مؤمنة ومجموعات أمان مشددة' },
-      { month: 'الشهر 2', focus: 'Cowrie SSH & Conpot SCADA Docker Honeynet Grid', output: 'مصفوفة مصائد العسل جاهزة لاستدراج المهاجمين' },
-      { month: 'الشهر 3', focus: 'Honeyfiles & Canary Tokens Deployment & VPN Endpoint', output: 'منظومة الملفات المفخخة وتأكيد اتصال نفق المعمل' },
-      { month: 'الشهر 4', focus: 'Threat Intelligence Extraction & Automated Log Parsing', output: 'استخراج عناوين IP وتكتيكات المهاجمين وتمريرها للـ SIEM' },
-      { month: 'الشهر 5', focus: 'Cloud Deception Final Audit & Threat Intel Report', output: 'تقرير استخبارات التهديدات موثق بهجمات حقيقية' }
+      { m: 'شهر 1', focus: 'AWS VPC Architecture & Least-Privilege IAM Policies', detail: 'إنشاء VPC مخصصة، ضبط الـ Subnets، وتطبيق مبدأ Least Privilege على صلاحيات الـ IAM.' },
+      { m: 'شهر 2', focus: 'Cowrie SSH & Conpot SCADA Docker Honeynet Grid', detail: 'نشر مصفوفة المصائد المخادعة (Cowrie SSH و Conpot SCADA) في حاويات Docker.' },
+      { m: 'شهر 3', focus: 'Honeyfiles & Canary Tokens Deployment & VPN Endpoint', detail: 'زرع ملفات فخاخ حساسة (Honeyfiles) وتأكيد اتصال نفق WireGuard القادم من المعمل.' },
+      { m: 'شهر 4', focus: 'Threat Intelligence Extraction & Automated Log Parsing', detail: 'استخراج عناوين المهاجمين والـ Hashes والكلمات المستخدمة وتوليد تقارير Threat Intel متجددة.' },
+      { m: 'شهر 5', focus: 'Cloud Deception Final Audit & Threat Intel Report', detail: 'توثيق معمارية السحابة وتقارير استخبارات التهديدات لعرضها على لجنة المناقشة.' }
     ]
   },
   {
-    memberId: 'marwan-ashraf',
-    memberName: 'مروان أشرف جوده إبراهيم',
+    id: 'marwan-ashraf',
+    name: 'مروان أشرف جوده إبراهيم',
     role: 'Hardware & Robotics Systems Engineer',
+    color: '#ef4444',
+    avatar: '🤖',
+    whyLearn: 'لبناء الكيان الفيزيائي الكامل للمشروع: عربة الفحص (Rover)، محطات المصنع الأربعة، ومفاتيح العزل الفيزيائي.',
+    projectImpact: 'تحويل المشروع من مجرد برمجيات إلى مصنع فيزيائي حقيقي ملموس مزود بروبوت فحص ومفاتيح أمان.',
     months: [
-      { month: 'الشهر 1', focus: 'Components Sourcing & ESP32 Sensors Prototyping', output: 'اختبار حساسات الحرارة والتيار والغاز على Breadboard' },
-      { month: 'الشهر 2', focus: '4WD Cyber-Rover Chassis Assembly & Obstacle Avoidance', output: 'روبوت متنقل يتفادى العقبات بالموجات فوق الصوتية' },
-      { month: 'الشهر 3', focus: '4 Industrial ESP32 Stations & MQTT Telemetry Publishing', output: 'أربع محطات تنشر قراءاتها لايف على وسيط الـ MQTT' },
-      { month: 'الشهر 4', focus: 'Hardware Relay Kill-Switch Integration (<20ms Cutoff)', output: 'دوائر عزل فيزيائي تفصل الكهرباء فورياً في الطوارئ' },
-      { month: 'الشهر 5', focus: 'Final Acrylic Model Finishing & Live Demo Assembly', output: 'مجسم المصنع الذكي المضيء جاهز بالكامل للمناقشة' }
+      { m: 'شهر 1', focus: 'Components Sourcing & ESP32 Sensors Prototyping', detail: 'شراء القطع وبرمجة ESP32 لقراءة حساسات الحرارة والتيار والغاز والرطوبة.' },
+      { m: 'شهر 2', focus: '4WD Cyber-Rover Chassis Assembly & Obstacle Avoidance', detail: 'تجميع شاسيه الروبوت، محركات DC ودائرة L298N، وحساسات تفادي الحواجز بالموجات فوق الصوتية.' },
+      { m: 'شهر 3', focus: '4 Industrial ESP32 Stations & MQTT Telemetry Publishing', detail: 'برمجة بوردات ESP32 لإرسال قراءات الحساسات دورياً عبر MQTT والتحكم في إضاءات الـ LEDs.' },
+      { m: 'شهر 4', focus: 'Hardware Relay Kill-Switch Integration (<20ms Cutoff)', detail: 'توصيل واختبار استجابة مفاتيح الـ Relay للفصل الميكانيكي الفوري في أقل من 20 ملي ثانية.' },
+      { m: 'شهر 5', focus: 'Final Acrylic Model Finishing & Live Demo Assembly', detail: 'بناء وتجميع المجسم الفيزيائي النهائي بالأكريليك والإضاءات الاحترافية للعرض يوم المناقشة.' }
     ]
   }
 ];
