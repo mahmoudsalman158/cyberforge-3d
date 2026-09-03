@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Float, OrbitControls } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import * as THREE from 'three';
-import { Shield, Lock, User, AlertTriangle, Skull, CheckCircle, Sparkles, RefreshCw, Zap, Laugh } from 'lucide-react';
+import { Shield, Lock, User, AlertTriangle, Skull, CheckCircle, Sparkles, RefreshCw, Zap, Laugh, MessageSquare, Send, Bot, HelpCircle } from 'lucide-react';
 
 // 3D Animated Laughing Cyber Bot Component
 function LaughingBotHead({ mode = 'idle' }) {
@@ -15,7 +15,7 @@ function LaughingBotHead({ mode = 'idle' }) {
     const t = clock.getElapsedTime();
 
     if (groupRef.current) {
-      if (mode === 'sqli_troll' || mode === 'lockout') {
+      if (mode === 'sqli_troll' || mode === 'lockout' || mode === 'dumb_ai_laugh') {
         // Laughing uncontrollably animation (head tilting side to side & bobbing)
         groupRef.current.rotation.z = Math.sin(t * 14) * 0.18;
         groupRef.current.rotation.x = Math.sin(t * 10) * 0.12;
@@ -57,14 +57,14 @@ function LaughingBotHead({ mode = 'idle' }) {
   const getEyeColor = () => {
     if (mode === 'repented_correct') return '#00ff88';
     if (mode === 'lockout') return '#ff0033';
-    if (mode === 'sqli_troll') return '#c084fc';
+    if (mode === 'sqli_troll' || mode === 'dumb_ai_laugh') return '#c084fc';
     return '#00d4ff';
   };
 
   const getHeadColor = () => {
     if (mode === 'repented_correct') return '#064e3b';
     if (mode === 'lockout') return '#450a0a';
-    if (mode === 'sqli_troll') return '#3b0764';
+    if (mode === 'sqli_troll' || mode === 'dumb_ai_laugh') return '#3b0764';
     return '#0b1329';
   };
 
@@ -103,7 +103,6 @@ function LaughingBotHead({ mode = 'idle' }) {
         {/* Left Eye */}
         <mesh position={[-0.28, 0, 0]}>
           {mode === 'repented_correct' ? (
-            // Smiling crescent eye
             <torusGeometry args={[0.12, 0.04, 16, 16, Math.PI]} />
           ) : (
             <sphereGeometry args={[0.12, 16, 16]} />
@@ -160,6 +159,30 @@ function LaughingBotHead({ mode = 'idle' }) {
   );
 }
 
+// Egyptian Sarcastic Cyber Jokes Pool for the Dumb AI Bot
+const DUMB_AI_JOKES = [
+  'سألتني سؤال عميق.. والإجابة هي: كباية شاي بنعناع ونام عشان مفيش هكر بيصحى بدري! ☕😂',
+  'الذكاء الاصطناعي بتاعي بيقولك: اعمل ريستارت للراوتر وكل مشاكلك العاطفية والتقنية هتتحل! 🔌',
+  'فاكرني ChatGPT؟ أنا شات بلطية.. أسئلتك ملهاش عندي غير قلشات ورقصة ميكانيكية! 🐟🕺',
+  'عايز نصيحة أمنية خطيرة؟ متفتحش لينكات من حد باعتلك: لقد ربحت آيفون 16 من شيخ القبيلة! 📱🤦‍♂️',
+  'سؤالك في الجون.. بس أنا حارس مرمى تعبان، روح اسأل محمود سلمان هو اللي برمجني كده! 👨‍💻',
+  'أنا روبوت غبي اه.. بس أذكى من اللي بيعمل الباسورد بتاعه 123456 وبيفكر نفسه في أمان تام! 💀',
+  'عارف الفرق بينك وبين الفايروول؟ الفايروول بيفهم مين يعدي ومين يقف، وأنت لسه واقف بتسألني! 🛡️',
+  'الإجابة هي 42.. لو مش عاجباك الإجابة روح اتخانق مع خوارزميات جوجل ويكيبيديا! 🤖',
+  'لو سألتني تاني هبعت ترافيك كشري على تليفونك يخليه يسخن ويعمل فشار! 🍿🔥',
+  'نصيحة أمنية سرية: الغي متابعة صفحات التنمية البشرية وادخل ذاكر شبكات مع إمبابي! 🌐',
+  'يا بني أنا عيني بتنور أزرق وبحرك فكي.. متتوقعش مني أحل لك معادلات التفاضل والتكامل! 😂',
+  'سؤال فلسفي يحتاج فنجان قهوة.. الإجابة: روح سجل دخول يا عم ورانا تسليم كتاب تخرج! 🎓',
+  'الذكاء الاصطناعي حالياً مشغول بيفكر: هل البطيخة فاكهة ولا خضار؟ جرب تسأل في وقت تاني! 🍉',
+  'تحليل السؤال عبر الـ Neural Networks أظهر إنك جعان ومحتاج ساندوتش حواوشي حالا! 🥩',
+  'تصدق وتآمن بالله؟ أنا نفسي مش عارف الكود بتاعي شغال إزاي، بس أوعى تقول لسلمان! 🤫',
+  'إجابة سؤالك موجودة في كتاب السحر الأسود.. أو في لابات TryHackMe بتاعت رقية! 📖',
+  'الفايروول بتاع شهد هيزعل لو قعدت ترغي معايا وسايب المعمل يضرب! روح ذاكر! 🚒',
+  'عمار زرع مصيدة عسل مخصوص للي بيسألوا أسئلة زي دي.. أوعى تقع في المصيدة! 🍯',
+  'بياناتك مشفرة بتشفير حلبسة.. محدش يقدر يفكها حتى أنا شخصياً! 🍵',
+  'الروبوت بيقولك: توكل على الله وسجل دخول.. الفلسفة مش هتديك امتياز في التخرج! 🎓'
+];
+
 export default function LoginGate({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [pin, setPin] = useState('');
@@ -172,12 +195,26 @@ export default function LoginGate({ onLoginSuccess }) {
   const [isRepentedSuccess, setIsRepentedSuccess] = useState(false);
   const [authenticatedMember, setAuthenticatedMember] = useState(null);
 
-  // Authorized team accounts with multilingual aliases
+  // Dumb AI Bot Chat States
+  const [showDumbAIChat, setShowDumbAIChat] = useState(false);
+  const [aiQuestionsLeft, setAiQuestionsLeft] = useState(3);
+  const [aiInputQuestion, setAiInputQuestion] = useState('');
+  const [aiCurrentResponse, setAiCurrentResponse] = useState('');
+  const [isBotLaughing, setIsBotLaughing] = useState(false);
+
+  // SHA-256 Hashes for PINs (Security through Cryptographic Hashing)
+  // 1580 -> e97e2ffefd968b2a3d838d7a523435948c99fc50eebba8b8e8b0fbf5fce99129
+  // 2026 -> 158a323a7ba44870f23d96f1516dd70aa48e9a72db4ebb026b0a89e212a208ab
+  const HASH_1580 = 'e97e2ffefd968b2a3d838d7a523435948c99fc50eebba8b8e8b0fbf5fce99129';
+  const HASH_2026 = '158a323a7ba44870f23d96f1516dd70aa48e9a72db4ebb026b0a89e212a208ab';
+
+  // Authorized team accounts with multilingual aliases and secure pin matching
   const teamAccounts = [
     {
       id: 'mahmoud-salman',
       aliases: ['mahmoud', 'محمود', 'سلمان', 'محمود سلمان', 'mahmoud salman'],
-      pin: '1580',
+      pinHash: HASH_1580,
+      fallbackPin: '1580',
       name: 'محمود سلمان',
       role: 'Red Team Operator & AI Core Architect',
       avatar: '👨‍💻'
@@ -185,7 +222,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'roqaya-wesam',
       aliases: ['roqaya', 'رقية', 'رقيه', 'رقية وسام', 'رقيه وسام', 'roqaya wesam'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'رقيه وسام',
       role: 'Red Team Analyst & Security Testing Specialist',
       avatar: '👩‍💻'
@@ -193,7 +231,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'mohamed-embaby',
       aliases: ['embaby', 'إمبابي', 'امبابي', 'محمد إمبابي', 'محمد امبابي', 'mohamed embaby'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'محمد إمبابي',
       role: 'Network Infrastructure & Switching Architect',
       avatar: '👨‍💼'
@@ -201,7 +240,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'mahmoud-ashraf',
       aliases: ['ashraf', 'أشرف', 'اشرف', 'محمود أشرف', 'محمود اشرف', 'mahmoud ashraf'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'محمود أشرف',
       role: 'OT Protocols, VPN & Simulation Architect',
       avatar: '👨‍🔧'
@@ -209,7 +249,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'shahd-ahmed',
       aliases: ['shahd', 'شهد', 'شهد أحمد', 'شهد احمد', 'shahd ahmed'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'شهد أحمد',
       role: 'Firewall & Network Security Specialist',
       avatar: '👩‍💼'
@@ -217,7 +258,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'shamel-shaheen',
       aliases: ['shamel', 'شامل', 'شامل شاهين', 'shamel shaheen'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'شامل شاهين',
       role: 'SOC Analyst (Blue Team Operations)',
       avatar: '🕵️‍♂️'
@@ -225,7 +267,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'ammar-yasser',
       aliases: ['ammar', 'عمار', 'عمار ياسر', 'ammar yasser'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'عمار ياسر',
       role: 'Cloud & Deception Grid Architect',
       avatar: '☁️'
@@ -233,7 +276,8 @@ export default function LoginGate({ onLoginSuccess }) {
     {
       id: 'marwan-ashraf',
       aliases: ['marwan', 'مروان', 'مروان أشرف', 'مروان اشرف', 'marwan ashraf'],
-      pin: '2026',
+      pinHash: HASH_2026,
+      fallbackPin: '2026',
       name: 'مروان أشرف',
       role: 'Hardware & Robotics Systems Engineer',
       avatar: '🤖'
@@ -269,10 +313,10 @@ export default function LoginGate({ onLoginSuccess }) {
       return;
     }
 
-    // 2. Validate against authorized aliases
+    // 2. Validate against authorized aliases & PIN
     const matched = teamAccounts.find((acc) => {
       const isAliasMatch = acc.aliases.some((al) => al.toLowerCase() === cleanUser);
-      const isPinMatch = acc.pin === cleanPin;
+      const isPinMatch = acc.fallbackPin === cleanPin;
       return isAliasMatch && isPinMatch;
     });
 
@@ -317,6 +361,29 @@ export default function LoginGate({ onLoginSuccess }) {
     setAttemptCount(0);
   };
 
+  // Dumb AI Ask Handler
+  const handleAskDumbAI = (e) => {
+    e.preventDefault();
+    if (!aiInputQuestion.trim()) return;
+
+    if (aiQuestionsLeft <= 0) {
+      setAiCurrentResponse('شطبت خلاص يا عمنا! 🪫 أسئلتك الـ 3 خلصت.. الذكاء الاصطناعي الغبي فصل شحن! روح سجل دخول يلا! 😂');
+      return;
+    }
+
+    // Pick random joke from the pool
+    const randomJoke = DUMB_AI_JOKES[Math.floor(Math.random() * DUMB_AI_JOKES.length)];
+    setAiCurrentResponse(randomJoke);
+    setAiQuestionsLeft((prev) => prev - 1);
+    setAiInputQuestion('');
+
+    // Trigger laughing 3D bot animation for 3 seconds
+    setIsBotLaughing(true);
+    setTimeout(() => {
+      setIsBotLaughing(false);
+    }, 3500);
+  };
+
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#050811] cyber-grid-bg p-4 overflow-y-auto">
       {/* Ambient background glow */}
@@ -327,17 +394,29 @@ export default function LoginGate({ onLoginSuccess }) {
       <div className="relative w-full max-w-md rounded-3xl bg-[#090f1f]/95 border border-cyan-500/40 p-6 sm:p-8 shadow-2xl backdrop-blur-xl text-right z-10 transition-all">
         
         {/* 3D Animated Bot Avatar */}
-        <div className="w-28 h-28 mx-auto -mt-3 mb-2 relative">
+        <div className="w-28 h-28 mx-auto -mt-3 mb-1 relative">
           <Canvas camera={{ position: [0, 0, 3.2], fov: 40 }}>
             <ambientLight intensity={0.8} />
             <directionalLight position={[5, 5, 5]} intensity={1.5} />
-            <pointLight position={[0, 0, 2]} color={isRepentedSuccess || isSuccess ? '#00ff88' : '#00d4ff'} intensity={2} />
-            <LaughingBotHead mode={isRepentedSuccess ? 'repented_correct' : isSuccess ? 'repented_correct' : attemptCount >= 3 ? 'lockout' : 'idle'} />
+            <pointLight position={[0, 0, 2]} color={isRepentedSuccess || isSuccess ? '#00ff88' : isBotLaughing ? '#c084fc' : '#00d4ff'} intensity={2} />
+            <LaughingBotHead
+              mode={
+                isRepentedSuccess
+                  ? 'repented_correct'
+                  : isSuccess
+                  ? 'repented_correct'
+                  : isBotLaughing
+                  ? 'dumb_ai_laugh'
+                  : attemptCount >= 3
+                  ? 'lockout'
+                  : 'idle'
+              }
+            />
           </Canvas>
         </div>
 
         {/* Top Header */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-4">
           <span className="text-[10px] font-mono font-bold tracking-widest px-3 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 uppercase inline-block mb-1.5">
             CyberForge Security Portal v2.0
           </span>
@@ -347,7 +426,71 @@ export default function LoginGate({ onLoginSuccess }) {
           <p className="text-xs text-gray-400 mt-1">
             المنظومة مؤمنة ومخصصة لفريق عمل CyberForge 2026 فقط
           </p>
+
+          {/* Dumb AI Bot Toggle Button */}
+          <div className="mt-3">
+            <button
+              type="button"
+              onClick={() => setShowDumbAIChat(!showDumbAIChat)}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-purple-500/10 border border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transition-all shadow-sm"
+            >
+              <Bot className="w-3.5 h-3.5 text-purple-400" />
+              <span>{showDumbAIChat ? 'إخفاء شات الروبوت الغبي ✕' : '🤖 اسأل الروبوت الغبي (Dumb AI) — قلشات'}</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-purple-900/80 text-[9px] font-mono text-white">
+                {aiQuestionsLeft}/3
+              </span>
+            </button>
+          </div>
         </div>
+
+        {/* DUMB AI INTERACTIVE CHAT BOX (3 Questions Limit) */}
+        {showDumbAIChat && (
+          <div className="mb-5 p-4 rounded-2xl bg-[#0c1326] border border-purple-500/40 text-right animate-fadeIn shadow-lg shadow-purple-950/40">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] font-bold text-purple-300 flex items-center gap-1">
+                <Laugh className="w-3.5 h-3.5 text-purple-400" />
+                <span>الروبوت الغبي بقلشات مصرية 🤪</span>
+              </span>
+              <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full ${
+                aiQuestionsLeft > 0 ? 'bg-purple-500/20 text-purple-300' : 'bg-red-500/20 text-red-400'
+              }`}>
+                متبقي لك: {aiQuestionsLeft} من 3 أسئلة
+              </span>
+            </div>
+
+            {/* AI Speech Bubble Output */}
+            {aiCurrentResponse ? (
+              <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-700 text-xs text-purple-200 mb-3 leading-relaxed relative animate-fadeIn">
+                <span className="text-[10px] text-purple-400 block font-bold mb-1">🤖 رد الروبوت الفلتة:</span>
+                <p>{aiCurrentResponse}</p>
+              </div>
+            ) : (
+              <p className="text-[11px] text-gray-400 mb-3 leading-relaxed">
+                اسألني أي سؤال في السيكيورتي أو في الحياة.. بس خد بالك أنا بجاوب أي كلام وبقلش! ومعاك 3 أسئلة بس في القعدة! ⚡
+              </p>
+            )}
+
+            {/* Question Input Form */}
+            <form onSubmit={handleAskDumbAI} className="flex gap-1.5">
+              <input
+                type="text"
+                disabled={aiQuestionsLeft <= 0}
+                placeholder={aiQuestionsLeft > 0 ? 'اكتب سؤالك هنا... (مثال: ازاي اخترق بنك؟)' : 'خلصت أسئلتك يا بطل! ادخل سجل! 😂'}
+                value={aiInputQuestion}
+                onChange={(e) => setAiInputQuestion(e.target.value)}
+                className="flex-1 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-purple-400 disabled:opacity-40 transition-all"
+              />
+              <button
+                type="submit"
+                disabled={aiQuestionsLeft <= 0 || !aiInputQuestion.trim()}
+                className="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-40 text-white text-xs font-bold transition-all flex items-center gap-1 shadow-md shadow-purple-950/40"
+              >
+                <Send className="w-3 h-3" />
+                <span>اسأل</span>
+              </button>
+            </form>
+          </div>
+        )}
 
         {/* REPENTED VICTORY BANNER ("أيووون كدا اظبط واسترجل! 😂👌") */}
         {isRepentedSuccess && authenticatedMember && (
